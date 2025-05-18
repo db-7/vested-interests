@@ -1,50 +1,61 @@
+#turns out, of course the game crashes when you image blank space. added a placeholder image
+
 #defining assets
 
+####SPRITES####
 #nyx sprites
-define nyx neu = 
-define nyx hap =
-define nyx ano = 
-define nyx sch =
-define nyx flu =
-define nyx shr =
+image nyx neu = "p" 
+image nyx hap = "p"
+image nyx ano = "p" 
+image nyx sch = "p"
+image nyx flu = "p"
+image nyx shr = "p"
 
 #jessie sprites
-define jes neu =
-define jes hap =
-define jes ano =
-define jes sch =
-define jes flu =
-define jes ino =
+image jes neu = "p"
+image jes hap = "p"
+image jes ano = "p"
+image jes sch = "p"
+image jes flu = "p"
+image jes ino = "p"
 
 #astin sprites
-define ast neu =
-define ast hap =
-define ast ano =
-define ast tea =
-define ast flu =
-define ast cur =
+image ast neu = "p"
+image ast hap = "p"
+image ast ano = "p"
+image ast tea = "p"
+image ast flu = "p"
+image ast cur = "p"
 
 #elias sprites
-define eli neu =
-define eli hap =
-define eli ano =
-define eli smu =
-define eli flu =
-define eli cur =
+image eli neu = "p"
+image eli hap = "p"
+image eli ano = "p"
+image eli smu = "p"
+image eli flu = "p"
+image eli cur = "p"
 
 #pierre sprites
-define pir neu =
-define pir hap =
-define pir awk =
-define pir sur =
-define pir flu =
-define pir cur =
+image pir neu = "p"
+image pir hap = "p"
+image pir awk = "p"
+image pir sur = "p"
+image pir flu = "p"
+image pir cur = "p"
 
 #lucas sprites
-define luc neu =
-define luc hap =
-define luc ano =
-define luc col =
-define luc flu =
+image luc neu = "p"
+image luc hap = "p"
+image luc ano = "p"
+image luc col = "p"
+image luc flu = "p"
 #can't be int, ntg = intrigued v
-define luc ntg =
+image luc ntg = "p"
+
+####CGs####
+#Astin
+image a cg1 = "p"
+image a cg2 = "p"
+image a cg3 = "p"
+
+#
