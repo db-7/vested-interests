@@ -1,4 +1,4 @@
-#screens, but in a seperate file from the one provided by ren'py
+#scripts and stuff
 #inventory
 init python:
     class Item:
@@ -16,8 +16,10 @@ init python:
                 self.money -= item.cost
                 self.items.append(item)
                 return True
+                Jump("buyjuice2")
             else:
                 return False
+                Jump("buyjuice3")
 
         def earn(self, amount):
             self.money += amount
@@ -29,12 +31,16 @@ init python:
                     return False
     inventory = Inventory()
 
+###shop menus###
+#styles for confirm
 style item_name:
     textalign 0.5
     layout "subtitle"
 style item_desc:
     textalign 0.5
     layout "subtitle"
+
+#confirm buy screen
 screen confirmbuy(item, desc):
 
     ## Ensure other screens do not get input while this screen is displayed.
@@ -64,30 +70,36 @@ screen confirmbuy(item, desc):
                 xalign 0.5
                 spacing 150
 
-                textbutton _("Buy this") action [Function(inventory.buy,item), Hide("confirmbuy")]
-                textbutton _("Cancel") action Hide("confirmbuy")
+                textbutton _("Buy this") action [Function(inventory.buy,item)], Hide("confirmbuy"), Jump("buyjuice2")
+                textbutton _("Cancel") action Hide("confirmbuy"), Show("juiceshop")
 
     ## Right-click and escape answer "no".
     key "game_menu" action Hide("confirmbuy")
 
+#juice shop screen
 screen juiceshop:
     imagebutton:
         xalign 0.1 ypos 500
         idle "soda"
         hover "soda_hover"
-        action Show("confirmbuy", item=Item("Soda", 5), desc="fizzy juice. $5 (You have [inventory.money])")
+        action Show("confirmbuy", item=Item("Soda", 5), desc="fizzy juice. $5 (You have [inventory.money])"), SetVariable("drink", "soda")
     imagebutton:
         xalign 0.35 ypos 450
         idle "coffee"
         hover "coffee_hover"
-        action Show("confirmbuy", item=Item("Coffee", 5), desc="bean juice. $5 (You have $[inventory.money])")
+        action Show("confirmbuy", item=Item("Coffee", 5), desc="bean juice. $5 (You have $[inventory.money])"), SetVariable("drink", "coffee")
     imagebutton:
         xalign 0.6 ypos 250
         idle "juice"
         hover "juice_hover"
-        action Show("confirmbuy", item=Item("Juice", 5), desc="froot juice. $5 (You have $[inventory.money])")
+        action Show("confirmbuy", item=Item("Juice", 5), desc="froot juice. $5 (You have $[inventory.money])"), SetVariable("drink", "juice")
     imagebutton:
         xalign 0.9 ypos 500
         idle "tea"
         hover "tea_hover"
-        action Show("confirmbuy", item=Item("tea", 5), desc="leaf juice. $5 (You have $[inventory.money])")
+        action Show("confirmbuy", item=Item("Tea", 5), desc="leaf juice. $5 (You have $[inventory.money])"), SetVariable("drink", "tea")
+    frame:
+        xalign 1.0
+        button:
+            action Return()
+            text "Leave" style "button_text"

@@ -15,10 +15,13 @@ default epts = -15
 default ppts = -20
 default lpts = -30
 default jpts = -40
+default route = None
 default persistent.aend = False
 default persistent.eend = False
 default persistent.pend = False
 default persistent.lend = False
+default inventory.money = 0
+default drink = None
 
 # The game starts here.
 
