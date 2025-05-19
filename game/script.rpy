@@ -26,7 +26,7 @@ default drink = None
 # The game starts here.
 
 label start:
-    #jump w1 (hashtagged out to test w2 shop)
+    jump w1
     jump w2
     jump w3
     jump w4
