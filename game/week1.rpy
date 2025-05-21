@@ -1,8 +1,6 @@
-label w1:
-    scene black with dissolve
-
 #Monday - Intro
 label w1mon:
+    scene black with dissolve
     scene bg bedN with dissolve
     "In highschool, Jessica and I were never really in the same circles. "
     "When we occasionally crossed paths we got along just fine. "

@@ -1,4 +1,6 @@
-label w2:
+label w2mon:
+    #nope
+label w2wed:
     #for testing shop and gifting, tag out later
     menu pickroute:
         "pick a route (for testing)"
@@ -18,7 +20,7 @@ label w2:
         "go":
             pass
         "nah":
-            jump w2back
+            jump w2gift
     n "I will now go get drinks, goodbye."
     scene bg juiceshop with dissolve
     n "ooooh i will now buy juice for boys"
@@ -26,44 +28,38 @@ label w2:
 label buyjuice:
     call screen juiceshop
     #if player leaves, the code passes through to here
-    n "I don't think I'll get anything."
-    "I left the shop and went back to the boys."
-    jump w2back
-label buyjuice2:
-    #if player buys something, jumps here
-    "I bought {b}[drink]{/b}, now I have $[inventory.money] left."
-    "I left the shop and went back to the boys."
-    jump w2back
-label w2back:
-    if drink == None:
-        "I didn't buy anything."
-        return
-    if route == "Astin":
+    jump shopend
+label w2gift:
+    if drink == "no":
+        jump w2wedcon
+    elif route == "Astin":
         n "hey astin i bought you-"
         if drink == "soda":
             a "OH MY GOD I LOVE SODA MARRY ME"
             $ apts += 5
         else:
             a "what is this ew"
-    if route == "Elias":
+    elif route == "Elias":
         n "hey elias i bought you-"
         if drink == "juice":
             e "OH MY GOD I LOVE JUICE MARRY ME"
             $ epts += 5
         else:
             e "what is this ew"
-    if route == "Pierre":
+    elif route == "Pierre":
         n "hey pierre i bought you-"
         if drink == "tea":
             p "OH MY GOD I LOVE TEA MARRY ME"
             $ ppts += 5
         else:
             p "what is this ew"
-    if route == "Lucas":
+    elif route == "Lucas":
         n "hey lucas i bought you-"
         if drink == "coffee":
             l "OH MY GOD I LOVE COFFEE MARRY ME"
             $ lpts += 5
         else:
             l "what is this ew"
-    return
+label w2wedcon:
+    n "anyways"
+    n "blahblahblah"

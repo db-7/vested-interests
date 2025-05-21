@@ -70,7 +70,7 @@ screen confirmbuy(item, desc):
                 xalign 0.5
                 spacing 150
 
-                textbutton _("Buy this") action [Function(inventory.buy,item)], Hide("confirmbuy"), Jump("buyjuice2")
+                textbutton _("Buy this") action [Function(inventory.buy,item)], Hide("confirmbuy"), Jump("shopend")
                 textbutton _("Cancel") action Hide("confirmbuy"), Show("juiceshop")
 
     ## Right-click and escape answer "no".
@@ -101,5 +101,19 @@ screen juiceshop:
     frame:
         xalign 1.0
         button:
-            action Return()
+            action Return(), SetVariable("drink", "no")
+            #shopend checks for a drink, so we give a pretend drink called "no"
             text "Leave" style "button_text"
+
+#shop end thing
+label shopend:
+    #avoiding making a new variable 101
+    if drink != None:
+        if drink == "no":
+            "I didn't buy anything."
+        else:
+            "I bought {b}[drink]{/b}, now I have $[inventory.money] left."
+        "I left the shop and went back to the boys."
+        jump w2gift
+    else:
+        "congrats, you broke the game!"

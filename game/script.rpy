@@ -35,11 +35,11 @@ default drink = None
 # The game starts here.
 
 label start:
-    jump w1
-    jump w2
-    jump w3
-    jump w4
-    jump w5
+    #jump w1mon
+    jump w2mon
+    jump w3mon
+    jump w4mon
+    jump w5mon
 
 label end:
     if apts > 80:
