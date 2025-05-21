@@ -1,6 +1,7 @@
 #turns out, of course the game crashes when you image blank space. added a placeholder image
 
 #defining assets
+image bg cafe = "bg/cafe.png"
 image bg juiceshop = "frootjuice.png"
 ####SPRITES####
 #nyx sprites
