@@ -2,31 +2,37 @@
 label w1mon:
     scene black with dissolve
     scene bg bedN with dissolve
-    "In highschool, Jessica and I were never really in the same circles. "
-    "When we occasionally crossed paths we got along just fine. "
-    "Jessica was always such an upbeat girl, I thought she was sweet."
+    """In highschool, Jessica and I were never really in the same circles.\n
+    When we occasionally crossed paths we got along just fine. 
+    Jessica was always such an upbeat girl, I thought she was sweet.
 
-    "When I noticed that Jessica was into one of my friends I tried to help set them up."
-    "But... Jessica had taken it as an insult. She said I was just 'rubbing it in her face'."
-    "I didn't know that my friend had a crush on me at the time... but Jessica never gave me the chance to explain."
+    When I noticed that Jessica was into one of my friends I tried to help set them up.
+
+    But... Jessica had taken it as an insult. She said I was just 'rubbing it in her face'.
+    I didn't know that my friend had a crush on me at the time... but Jessica never gave me the chance to explain.
     
-    "Instead of the kind girl I knew, Jessica became cold and envious."
-    "Eventually, rumors about me started to spread."
-    "'I heard that Nyx has fun leading guys on. She likes seeing them wrapped around her little finger.'"
-    "'Did you hear that Nyx goes after men in relationships? Jessica said that Nyx stole her boyfriend.'"
-    "I didn't mind the whispers and it didn't take long for them to dissipate."
-    "I was only upset that Jessica would stoop so low to get at me."
-    "We really could have been good friends..."
+    Instead of the kind girl I knew, Jessica became cold and envious.
+    Eventually, rumors about me started to spread.
+
+    'I heard that Nyx has fun leading guys on. She likes seeing them wrapped around her little finger.'
+    'Did you hear that Nyx goes after men in relationships? Jessica said that Nyx stole her boyfriend.'
+
+    I didn't mind the whispers and it didn't take long for them to dissipate.
+    I was only upset that Jessica would stoop so low to get at me.
+
+    We really could have been good friends...
     
-    "After highschool, I never heard from Jessica again."
-    "So a couple years later when I was transferring colleges and looking for a place to stay--"
-    "It was really surprising to get an offer from Jessica."
-    "She mentioned sharing a three bed apartment with four other people and I could stay in her room for cheap."
-    "Jessica even insisted that we catch up a bit before I officially moved in."
-    "I figured it was a good deal and worked out the details with her before I started packing the next day."
+    After highschool, I never heard from Jessica again.
+
+    So a couple years later when I was transferring colleges and looking for a place to stay--\n
+    It was really surprising to get an offer from Jessica.
+
+    She mentioned sharing a three bed apartment with four other people and I could stay in her room for cheap.
+    Jessica even insisted that we catch up a bit before I officially moved in.
+    I figured it was a good deal and worked out the details with her before I started packing the next day.
     
-    "I'll be meeting her at a cafe tomorrow."
-    "I think it'll be nice to see her after all this time."
+    I'll be meeting her at a cafe tomorrow.
+    I think it'll be nice to see her after all this time."""
     scene black with dissolve
 
 #Tuesday - Meet the Antagonist
@@ -43,14 +49,14 @@ label w1tue:
     j "Nyx! It's me Jessica!"
 
     show nyx neu with dissolve
-    na "I see a woman with pink hair and gold earrings running up to me."
-    na "Jessica gives me an eager hug with a sweet smile on her face."
+    "I see a woman with pink hair and gold earrings running up to me."
+    "Jessica gives me an eager hug with a sweet smile on her face."
 
     j "Oh! It's so good to see you! How long has it been? Two or three years?"
 
-    ja "She quickly leads me to sit at a table with her."
+    "She quickly leads me to sit at a table with her."
     show nyx hap with dissolve
-    na "I guess Jessica is still a bubbly whirlwind of energy. She's almost too much for me to keep up with."
+    "I guess Jessica is still a bubbly whirlwind of energy. She's almost too much for me to keep up with."
 
     n "Yeah it's been awhile, Jess. You look good, almost didn't recognize you with that pink hair."
 
@@ -69,7 +75,7 @@ label w1tue:
     show jes neu with dissolve
     j "Oh, I'm sorry I just really went off there didn't I? What's your major then, Nyx?"
 
-    na "I wave her off reassuringly."
+    "I wave her off reassuringly."
 
     n "Nah. You're good, Jess. I'm actually working to become a nurse. Always loved taking care of people."
 
@@ -77,7 +83,7 @@ label w1tue:
 
     show nyx q with dissolve
     #idk what q is...
-    na "I feel confused by her statement but I brush it off so I could ask a more important question."
+    "I feel confused by her statement, but I brush it off so I could ask a more important question."
 
     n "So what are your roommates like?"
 
@@ -106,31 +112,31 @@ label w1tue:
     j "Lucas is a bit closed off and Elias is kinda flirty. But Pierre is a gentleman and Astin's really funny."
 
     show nyx neu with dissolve
-    na "I nod along as I listen to Jessica. They seem like people I could get along with."
+    "I nod along as I listen to Jessica. They seem like people I could get along with."
 
     show jes sch with dissolve
     j "And of course I told them about you and your past."
 
     "{cps=2}...{/cps}"
     show nyx ano with dissolve
-    na "{cps=20}What the hell did she mean by my 'past'?{/cps}"
+    "{cps=20}What the hell did she mean by my 'past'?{/cps}"
 
     n "Excuse me?"
 
-    ja "Jessica's smile becomes a bit sinister."
+    "Jessica's smile becomes a bit sinister."
 
-    ja "Oh, you know~ Just about how you're a homewrecker that likes playing around with people's feelings. We all heard about it back in highschool, right?"
+    j "Oh, you know~ Just about how you're a homewrecker that likes playing around with people's feelings. We all heard about it back in highschool, right?"
 
     show nyx neu with dissolve
     na "Oh... so that's how it is."
-    na "Jessica is the same as ever."
+    "Jessica is the same as ever."
     show nyx sch with dissolve
-    na "I chuckle softly and smirk in amusement."
+    "I chuckle softly and smirk in amusement."
 
     n "Oh? Well I really appreciate that, Jessie. Glad I don't have to explain myself to my new roommates. I'm sure we're all gonna get along just fine."
 
     show nyx hap with dissolve
-    na "I take Jessica's hands and give them a gentle squeeze."
+    "I take Jessica's hands and give them a gentle squeeze."
 
     show nyx sch with dissolve
     n "You're just so kind-hearted for letting me stay with you even after I 'wronged' you."
@@ -143,7 +149,7 @@ label w1tue:
     show jes ano with MoveTransition(0.5):
         xalign 0.8
 
-    ja "Jessica scowls and rips her hands away from me."
+    "Jessica scowls and rips her hands away from me."
 
     j "So you won't even deny it, huh?"
 
