@@ -170,3 +170,181 @@ label w1tue:
 
     hide nyx with moveoutright
     "I can practically feel Jessica's glare burning through my back as I walk out the door."
+    
+    scene black with dissolve
+
+#Wednesday - Meet the Love Interests
+label w1wed:
+    scene bg car with dissolve
+
+    """It's finally time to move in.
+    I'm real interested in meeting these guys, especially with whatever bullshit they heard from Jessica.
+    I'm sure this will be an entertaining introduction."""
+
+    scene bg apthall with dissolve
+
+    """I've arrived at the apartment complex.
+    I'm surprised that it's so nice considering the cheap rent I'll be paying.
+
+    I knock on the door and barely have to wait when Jessica quickly swings the door open."""
+
+    show jes happy with moveinright:
+        xalign 0.8
+    "Nyx! I'm so happy you're here!"
+
+    """Jessica suddenly embraces me into an almost bone crushing hug.'
+    I'm about to shove her off of me when I suddenly notice some men in the living room behind her.
+    I quickly adapt and return the hug."""
+
+    show nyx happy with moveinleft:
+        xalign 0.2
+    "Ah, Jess, you practically knocked me off my feet there."
+
+    "Jessica giggles and lets go of me."
+
+    show jes ino with dissolve
+    "I couldn't help it! Even if we saw each other yesterday I still can't believe we'll be living together."
+    show jes neu with dissolve
+    "Come on, let me introduce you to your new roommates!"
+
+    scene cg meet with dissolve
+
+    "Jessica gestures towards the cute redhead."
+
+    j "So this is Astin."
+
+    "Astin gives me a small wave."
+
+    a "Yo, I've heard a lot about you from Jessica! Uh, mostly good things."
+
+    "He's quick to correct himself."
+    "He seems sweet but I can imagine it's a little hard to be friendly to someone you've only heard awful things about."
+
+    "I give Astin a friendly smile."
+
+    n "I sure hope so. Jessie B. and I have always been real close. It's nice to meet you, Astin."
+
+    "Astin seems to brighten a bit from my laid back demeanor."
+
+    e "Then the... extravagantly dressed man decides to introduce himself."
+
+    e "My, My~ I didn't expect our new roommate to be such a stunning woman. My name is Elias, I hope we can get to know each other."
+
+    "Ah... he'd be charming if he was being genuine."
+
+    n "I'm flattered. I'm sure we'll be able to spend plenty of time together."
+
+    e "Perhaps we could-"
+
+    j 'Jessica quickly interrupts Elias.'
+
+    j "Alright, lovebirds. The two of you can flirt later. Anyways, Nyx, this is Pierre."
+
+    "Jessica looks over at the blonde man hoping he would introduce himself."
+    "Pierre takes a sip of his tea before speaking softly."
+
+    p "A pleasure to meet you, madame."
+
+    "He seems like a gentleman but a bit quiet."
+
+    j "Pierre isn't really the talkative type but he's charming. You'll get used to it."
+
+    "Jessica then cranes her neck to look over at the stoic man reading on the couch."
+
+    j "Oh and over there is Lucas. He's pretty reserved so you should probably just leave him alone."
+
+    """Lucas doesn't bother to acknowledge my presence or he may not even realize I'm there.
+    I can respect wanting to keep to yourself, probably should be grateful I even got to see such a recluse."""
+
+    scene bg aptint with dissolve
+
+    show jes hap with dissolve:
+        xalign 0.8
+    j "Now that introductions are all done I can tell you about the rules! After that I'll show you around the house."
+
+    show nyx q with dissolve:
+        xalign 0.2
+    n "Rules?"
+
+    show jes neu with dissolve
+    j "Just normal things really. Everyone has assigned chores each week. You need to be quiet after 8pm. And just respect people's belongings!"
+
+    show jes ino with dissolve
+    j "Ah, I almost forgot the most important one. You can't bring anyone over. I know you like to get around and socialize but we prefer to not have guests here."
+
+    show nyx hap with dissolve
+    n "Oh, I promise you won't have to worry about that, Jess. People change, you know?"
+
+    "Jessica's eye twitches a bit in irritation."
+
+    show jes ino with dissolve
+    j "Of course, I'm sure you have. Come on, let me show you around the house!"
+
+    """Jessica 'eagerly' grabs my hand and leads me away.
+
+    Astin waves me bye as he rushes out of the apartment. He probably has class.
+
+    As soon as we're out of sight from the guys she drops my hand and looks at me with an annoyed expression."""
+
+    show jes ano with dissolve
+    j "I see you're already getting pretty friendly. But I recommend you lay off."
+    show jes sch with dissolve
+    "I've known these guys for a while and they are wrapped around my little finger. One word from me will have you out of here in a heartbeat."
+
+    "I hold back a laugh."
+
+    n "You really overestimate yourself sometimes. I don't think they're as whipped as you like to think. A snake can shed its skin, but never change its color."
+
+    "Jessica scoffs."
+
+    show jes ano with dissolve
+    j "Oh, are you a philosophist now? Spare me the advice, Socrates."
+
+    scene bg bedS with dissolve
+
+    """Jessica finally shows me our shared room.
+    Something immediately stands out to me."""
+
+    show nyx q with dissolve
+    n "Bunk beds? Are you five?"
+
+    "Jessica rolls her eyes."
+
+    show jes neu with dissolve
+    j "Just shut up. You're lucky you even get to sleep in a bed."
+
+    "I raise my hands in a gesture of mock surrender."
+
+    show nyx sch with dissolve
+    n "Alright. Alright. No need to blow a fuse."
+
+    "Jessica sighs."
+
+    j "As I said everyone does chores around here. If you don't do your part then you can kiss your ass goodbye."
+
+    n "What's with the hostility? You invite me here and you already want to kick me out? How mean."
+
+    "I say teasingly."
+
+    show jes sch with dissolve
+    j "No, no. I don't want to kick you out. That'd be too simple. I want you ruined, I want you to never be able to show your face around campus again."
+    j "But I'm not one to rush, perfection takes time."
+
+    n "Well I'm glad your scheming has improved. You utterly failed to manipulate anyone back in highschool."
+
+    show jes ano with dissolve
+    j "You're such a bitch."
+
+    n "Takes one to know one, Jessie B."
+
+    j "Don't call me that! Gods, I'm getting out of here. I can't stand you already."
+
+    """Jessica grabs her purse and hurries out of our now shared bedroom.
+    So dramatic..."""
+    #more like "so adorable <333333"
+
+    """I move in my boxes and unpack, by the time I finish it's already late in the evening.
+    I have to go to the clinic tomorrow for my first day so I just hit the hay early.
+    I really can't believe I'm sleeping on a bunk bed..."""
+
+    scene black with dissolve
