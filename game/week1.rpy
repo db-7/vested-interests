@@ -128,7 +128,7 @@ label w1tue:
     j "Oh, you know~ Just about how you're a homewrecker that likes playing around with people's feelings. We all heard about it back in highschool, right?"
 
     show nyx neu with dissolve
-    na "Oh... so that's how it is."
+    "Oh... so that's how it is."
     "Jessica is the same as ever."
     show nyx sch with dissolve
     "I chuckle softly and smirk in amusement."
