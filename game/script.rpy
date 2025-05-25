@@ -11,6 +11,8 @@ define l = Character("Lucas",color="#41a273", what_prefix="\"", what_suffix="\""
 define j = Character("Jessica",color="#f4acc9", what_prefix="\"", what_suffix="\"")
 define n = Character("Nyx",color="#3c3ca1", what_prefix="\"", what_suffix="\"")
 
+define hn = Character("Head Nurse", what_prefix="\"", what_suffix="\"")
+
 default apts = -10
 default epts = -15
 default ppts = -20
@@ -27,7 +29,7 @@ default drink = None
 # The game starts here.
 
 label start:
-    #jump w1mon
+    jump w1mon
     jump w2mon
     jump w3mon
     jump w4mon

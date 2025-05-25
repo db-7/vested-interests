@@ -2,36 +2,57 @@
 label w1mon:
     scene black with dissolve
     scene bg bedN with dissolve
+    #triple quotes thing needs blank lines between
     """In highschool, Jessica and I were never really in the same circles.\n
+
     When we occasionally crossed paths we got along just fine. 
+
     Jessica was always such an upbeat girl, I thought she was sweet.
+
 
     When I noticed that Jessica was into one of my friends I tried to help set them up.
 
+
     But... Jessica had taken it as an insult. She said I was just 'rubbing it in her face'.
+
     I didn't know that my friend had a crush on me at the time... but Jessica never gave me the chance to explain.
+
     
     Instead of the kind girl I knew, Jessica became cold and envious.
+
     Eventually, rumors about me started to spread.
 
+
     'I heard that Nyx has fun leading guys on. She likes seeing them wrapped around her little finger.'
+
     'Did you hear that Nyx goes after men in relationships? Jessica said that Nyx stole her boyfriend.'
 
+
     I didn't mind the whispers and it didn't take long for them to dissipate.
+
     I was only upset that Jessica would stoop so low to get at me.
 
+
     We really could have been good friends...
+
     
     After highschool, I never heard from Jessica again.
 
+
     So a couple years later when I was transferring colleges and looking for a place to stay--\n
+
     It was really surprising to get an offer from Jessica.
 
+
     She mentioned sharing a three bed apartment with four other people and I could stay in her room for cheap.
+
     Jessica even insisted that we catch up a bit before I officially moved in.
+
     I figured it was a good deal and worked out the details with her before I started packing the next day.
+
     
     I'll be meeting her at a cafe tomorrow.
+
     I think it'll be nice to see her after all this time."""
     scene black with dissolve
 
@@ -188,15 +209,15 @@ label w1wed:
 
     I knock on the door and barely have to wait when Jessica quickly swings the door open."""
 
-    show jes happy with moveinright:
+    show jes hap with moveinright:
         xalign 0.8
-    "Nyx! I'm so happy you're here!"
+    j "Nyx! I'm so happy you're here!"
 
     """Jessica suddenly embraces me into an almost bone crushing hug.'
     I'm about to shove her off of me when I suddenly notice some men in the living room behind her.
     I quickly adapt and return the hug."""
 
-    show nyx happy with moveinleft:
+    show nyx hap with moveinleft:
         xalign 0.2
     "Ah, Jess, you practically knocked me off my feet there."
 
@@ -226,7 +247,7 @@ label w1wed:
 
     "Astin seems to brighten a bit from my laid back demeanor."
 
-    e "Then the... extravagantly dressed man decides to introduce himself."
+    "Then the... extravagantly dressed man decides to introduce himself."
 
     e "My, My~ I didn't expect our new roommate to be such a stunning woman. My name is Elias, I hope we can get to know each other."
 
@@ -236,7 +257,7 @@ label w1wed:
 
     e "Perhaps we could-"
 
-    j 'Jessica quickly interrupts Elias.'
+    "Jessica quickly interrupts Elias."
 
     j "Alright, lovebirds. The two of you can flirt later. Anyways, Nyx, this is Pierre."
 
@@ -254,6 +275,7 @@ label w1wed:
     j "Oh and over there is Lucas. He's pretty reserved so you should probably just leave him alone."
 
     """Lucas doesn't bother to acknowledge my presence or he may not even realize I'm there.
+
     I can respect wanting to keep to yourself, probably should be grateful I even got to see such a recluse."""
 
     scene bg aptint with dissolve
@@ -289,7 +311,7 @@ label w1wed:
     show jes ano with dissolve
     j "I see you're already getting pretty friendly. But I recommend you lay off."
     show jes sch with dissolve
-    "I've known these guys for a while and they are wrapped around my little finger. One word from me will have you out of here in a heartbeat."
+    j "I've known these guys for a while and they are wrapped around my little finger. One word from me will have you out of here in a heartbeat."
 
     "I hold back a laugh."
 
@@ -346,5 +368,77 @@ label w1wed:
     """I move in my boxes and unpack, by the time I finish it's already late in the evening.
     I have to go to the clinic tomorrow for my first day so I just hit the hay early.
     I really can't believe I'm sleeping on a bunk bed..."""
+
+    scene black with dissolve
+
+#Thursday - Work
+label w1thu:
+    scene bg clinicent with dissolve
+    """I head to the clinic early in the morning to start my training.
+    
+    The clinic bustles with people going in and out of the many facility rooms.
+    The strong scent of antiseptic and bleach permeates the air of the sterile environment.
+    I stop in front of the receptionist desk to retrieve my ID and scrubs."""
+
+    show nyx neu with moveinleft:
+        xalign 0.2
+    "Hello, my name is Nyx. I'm here as a nursing assistant."
+
+    hn "Ah, great. You're here right on time, Miss Nyx. Here's your ID, please change into this pair of scrubs and I'll show you to your station."
+
+    scene bg clinicstation with dissolve
+
+    hn "You'll mainly handle reception duties and giving patients their pills. I'll help you give Mrs. Mason her pills for today and then bring you to the reception desk."
+
+    #-Pill Sorting Minigame Tutorial-
+
+    hn "You did an amazing job, Miss Nyx. I can tell you're made for this job. Please follow me to the receptionist area."
+
+    scene bg clinicent with dissolve
+
+    hn "A nurse receptionist must greet patients, manage appointments, as well as take calls and answer them accordingly. You will mostly handle the calls for training."
+
+    #-Receptionist Minigame-
+
+    hn "Any questions about financial services should go to the billing department. Please transfer the caller to them."
+
+    hn "Mr. Smith needs some medical care. Please send a nurse to his room. Whenever a patient asks about their care, just send a nurse their way."
+
+    hn "This person wants to schedule an appointment. Go ahead and arrange a time for them."
+
+    #-End Tutorial-
+
+    show nyx neu with moveinleft:
+        xalign 0.2
+    hn "You've done a wonderful job in your training today, Miss Nyx. Please discard your scrubs and sanitize your hands when you leave. Have a good night."
+
+    "Thank you, Nurse Freya. I hope you have a nice shift."
+
+    """Nurse Freya laughs a bit as she waves me bye.
+    I suppose that a peaceful night shift at the clinic is unlikely."""
+
+    scene bg aptliving with dissolve
+
+    """It's dark when I get back to the apartment and it seems like everyone's already asleep.
+    Then I hear a quiet 'Yo!' Coming from the couch."""
+
+    show ast neu with moveinright:
+        xalign 0.8
+    a "Hey, Nyx! You're back pretty late, huh?"
+
+    show nyx neu with moveinleft:
+        xalign 0.2
+    n "Is it that late? I just finished my first shift at the clinic."
+
+    show ast cur with dissolve
+    a "The clinic? Ah, I think Jessica mentioned you're a nursing major."
+    show ast neu with dissolve
+    "I was actually hoping to catch you before you went to bed. Tomorrow we're all having a game night. I figured that you might want to join us but no pressure!"
+
+    show nyx hap with dissolve
+    n "Thanks, Astin. I'll be sure to hang out with you all tomorrow."
+
+    show ast hap with dissolve
+    a "Great! Uh, have a goodnight, Nyx."
 
     scene black with dissolve
