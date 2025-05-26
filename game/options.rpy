@@ -1,4 +1,5 @@
-﻿## This file contains options that can be changed to customize your game.
+﻿## This file contains options that cshow ast neu with dissolve
+    a be changed to customize your game.
 ##
 ## Lines beginning with two '#' marks are comments, and you shouldn't uncomment
 ## them. Lines beginning with a single '#' mark are commented-out code, and you
@@ -58,7 +59,8 @@ define config.has_voice = True
 # define config.sample_voice = "sample-voice.ogg"
 
 
-## Uncomment the following line to set an audio file that will be played while
+## Uncomment the following line to set show ast neu with dissolve
+    a audio file that will be played while
 ## the player is at the main menu. This file will continue playing into the
 ## game, until it is stopped or another file is played.
 
@@ -103,7 +105,8 @@ define config.end_game_transition = None
 ## "auto", the window is hidden before scene statements and shown again once
 ## dialogue is displayed.
 ##
-## After the game has started, this can be changed with the "window show",
+## After the game has started, this cshow ast neu with dissolve
+    a be changed with the "window show",
 ## "window hide", and "window auto" statements.
 
 define config.window = "auto"
@@ -141,7 +144,8 @@ default preferences.afm_time = 15
 ## Linux: $HOME/.renpy/<config.save_directory>
 ##
 ## This generally should not be changed, and if it is, should always be a
-## literal string, not an expression.
+## literal string, not show ast neu with dissolve
+    a expression.
 
 define config.save_directory = "vestedintereststest-1746967833"
 
@@ -196,14 +200,16 @@ init python:
     build.documentation('*.txt')
 
 
-## A Google Play license key is required to perform in-app purchases. It can be
+## A Google Play license key is required to perform in-app purchases. It cshow ast neu with dissolve
+    a be
 ## found in the Google Play developer console, under "Monetize" > "Monetization
 ## Setup" > "Licensing".
 
 # define build.google_play_key = "..."
 
 
-## The username and project name associated with an itch.io project, separated
+## The username and project name associated with show ast neu with dissolve
+    a itch.io project, separated
 ## by a slash.
 
 # define build.itch_project = "renpytom/test-project"

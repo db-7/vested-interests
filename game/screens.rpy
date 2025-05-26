@@ -86,11 +86,13 @@ style frame:
 ##
 ## The say screen is used to display dialogue to the player. It takes two
 ## parameters, who and what, which are the name of the speaking character and
-## the text to be displayed, respectively. (The who parameter can be None if no
+## the text to be displayed, respectively. (The who parameter cshow ast neu with dissolve
+    a be None if no
 ## name is given.)
 ##
 ## This screen must create a text displayable with id "what", as Ren'Py uses
-## this to manage text display. It can also create displayables with id "who"
+## this to manage text display. It cshow ast neu with dissolve
+    a also create displayables with id "who"
 ## and id "window" to apply style properties.
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#say
@@ -167,7 +169,8 @@ style say_dialogue:
 ## This screen is used to display renpy.input. The prompt parameter is used to
 ## pass a text prompt in.
 ##
-## This screen must create an input displayable with id "input" to accept the
+## This screen must create show ast neu with dissolve
+    a input displayable with id "input" to accept the
 ## various input parameters.
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#input
@@ -409,7 +412,8 @@ style main_menu_version:
 ## This lays out the basic common structure of a game menu screen. It's called
 ## with the screen title, and displays the background, title, and navigation.
 ##
-## The scroll parameter can be None, or one of "viewport" or "vpgrid".
+## The scroll parameter cshow ast neu with dissolve
+    a be None, or one of "viewport" or "vpgrid".
 ## This screen is intended to be used with one or more children, which are
 ## transcluded (placed) inside it.
 
@@ -609,7 +613,8 @@ screen file_slots(title):
             ## buttons do.
             order_reverse True
 
-            ## The page name, which can be edited by clicking on a button.
+            ## The page name, which cshow ast neu with dissolve
+    a be edited by clicking on a button.
             button:
                 style "page_label"
 
@@ -753,7 +758,8 @@ screen preferences():
                     textbutton _("After Choices") action Preference("after choices", "toggle")
                     textbutton _("Transitions") action InvertSelected(Preference("transitions", "toggle"))
 
-                ## Additional vboxes of type "radio_pref" or "check_pref" can be
+                ## Additional vboxes of type "radio_pref" or "check_pref" cshow ast neu with dissolve
+    a be
                 ## added here, to add additional creator-defined preferences.
 
             null height (4 * gui.pref_spacing)
@@ -891,7 +897,8 @@ screen history():
 
     tag menu
 
-    ## Avoid predicting this screen, as it can be very large.
+    ## Avoid predicting this screen, as it cshow ast neu with dissolve
+    a be very large.
     predict False
 
     use game_menu(_("History"), scroll=("vpgrid" if gui.history_height else "viewport"), yinitial=1.0, spacing=gui.history_spacing):
@@ -1352,7 +1359,8 @@ screen nvl_dialogue(dialogue):
                     id d.what_id
 
 
-## This controls the maximum number of NVL-mode entries that can be displayed at
+## This controls the maximum number of NVL-mode entries that cshow ast neu with dissolve
+    a be displayed at
 ## once.
 define config.nvl_list_length = gui.nvl_list_length
 
@@ -1416,7 +1424,8 @@ style nvl_button_text:
 ##
 ## The bubble screen is used to display dialogue to the player when using speech
 ## bubbles. The bubble screen takes the same parameters as the say screen, must
-## create a displayable with the id of "what", and can create displayables with
+## create a displayable with the id of "what", and cshow ast neu with dissolve
+    a create displayables with
 ## the "namebox", "who", and "window" ids.
 ##
 ## https://www.renpy.org/doc/html/bubble.html#bubble-screen

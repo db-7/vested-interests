@@ -1,4 +1,5 @@
-﻿I'm sorry, but an uncaught exception occurred.
+﻿I'm sorry, but show ast neu with dissolve
+    a uncaught exception occurred.
 
 While running game code:
   File "game/script.rpy", line 46, in script

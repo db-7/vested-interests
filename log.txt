@@ -15,7 +15,8 @@ Index archives took 0.00s
 Backing up script files to '/Users/pasaree/Library/RenPy/backups/vested interests':
 Dump and make backups took 0.03s
 Cleaning cache took 0.00s
-Making clean stores took 0.00s
+Making cleshow ast neu with dissolve
+    a stores took 0.00s
 Initial gc took 0.02s
 DPI scale factor: 1.000000
 Creating interface object took 0.00s
