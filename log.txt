@@ -1,13 +1,13 @@
-2025-05-20 09:17:12 UTC
+2025-06-14 08:10:04 UTC
 macOS-14.5-arm64-arm-64bit
 Ren'Py 8.3.2.24090902
 
 Early init took 0.03s
-Loading error handling took 0.02s
-Loading script took 0.08s
+Loading error handling took 0.03s
+Loading script took 0.54s
 Loading save slot metadata took 0.02s
 Loading persistent took 0.00s
-Running init code took 0.02s
+Running init code took 0.03s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
 Reloading save slot metadata took 0.01s
@@ -15,8 +15,7 @@ Index archives took 0.00s
 Backing up script files to '/Users/pasaree/Library/RenPy/backups/vested interests':
 Dump and make backups took 0.03s
 Cleaning cache took 0.00s
-Making cleshow ast neu with dissolve
-    a stores took 0.00s
+Making clean stores took 0.00s
 Initial gc took 0.02s
 DPI scale factor: 1.000000
 Creating interface object took 0.00s
@@ -27,10 +26,10 @@ Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.01s
 Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.02s
 Running _start took 0.00s
-Interface start took 0.21s
+Interface start took 0.18s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -40,5 +39,7 @@ Vendor: "b'Apple'"
 Renderer: b'Apple M1'
 Version: b'2.1 Metal - 88.1'
 Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(3478, 1956)
+Maximum texture size: 4096x4096
 Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
 Maximum texture size: 4096x4096

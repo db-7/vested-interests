@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 19: expected statement.
-    for i in inventory:
-          ^
+File "game/screens.rpy", line 97: expected statement.
+    example say_screen:
+                      ^
+
+File "game/screens.rpy", line 187: keyword argument 'xpos' is incompatible with 'xalign'.
+    xpos gui.dialogue_xpos
+        ^
 
 Ren'Py Version: Ren'Py 8.3.2.24090902
-Sun May 11 20:16:55 2025
+Sat Jun 14 16:07:38 2025

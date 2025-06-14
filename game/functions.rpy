@@ -87,8 +87,7 @@ screen juiceshop:
         xalign 0.35 ypos 450
         idle "coffee"
         hover "coffee_hover"
-        action Show("confirmbuy", item=Item("Coffee", 5), desc="beshow ast neu with dissolve
-    a juice. $5 (You have $[inventory.money])"), SetVariable("drink", "coffee")
+        action Show("confirmbuy", item=Item("Coffee", 5), desc="bean juice. $5 (You have $[inventory.money])"), SetVariable("drink", "coffee")
     imagebutton:
         xalign 0.6 ypos 250
         idle "juice"

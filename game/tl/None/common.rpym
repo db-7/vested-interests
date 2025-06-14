@@ -126,10 +126,8 @@ translate None strings:
     new "Self-Voicing Volume Drop"
 
     # renpy/common/00accessibility.rpy:237
-    old "The options on this menu are intended to improve accessibility. They may not work with all games, and some combinations of options may render the game unplayable. This is not show ast neu with dissolve
-    a issue with the game or engine. For the best results when changing fonts, try to keep the text size the same as it originally was."
-    new "The options on this menu are intended to improve accessibility. They may not work with all games, and some combinations of options may render the game unplayable. This is not show ast neu with dissolve
-    a issue with the game or engine. For the best results when changing fonts, try to keep the text size the same as it originally was."
+    old "The options on this menu are intended to improve accessibility. They may not work with all games, and some combinations of options may render the game unplayable. This is not an issue with the game or engine. For the best results when changing fonts, try to keep the text size the same as it originally was."
+    new "The options on this menu are intended to improve accessibility. They may not work with all games, and some combinations of options may render the game unplayable. This is not an issue with the game or engine. For the best results when changing fonts, try to keep the text size the same as it originally was."
 
     # renpy/common/00accessibility.rpy:242
     old "Return"
@@ -520,10 +518,8 @@ translate None strings:
     new "Are you sure you want to skip unseen dialogue to the next choice?"
 
     # renpy/common/00gui.rpy:459
-    old "This save was created on a different device. Maliciously constructed save files cshow ast neu with dissolve
-    a harm your computer. Do you trust this save's creator and everyone who could have changed the file?"
-    new "This save was created on a different device. Maliciously constructed save files cshow ast neu with dissolve
-    a harm your computer. Do you trust this save's creator and everyone who could have changed the file?"
+    old "This save was created on a different device. Maliciously constructed save files can harm your computer. Do you trust this save's creator and everyone who could have changed the file?"
+    new "This save was created on a different device. Maliciously constructed save files can harm your computer. Do you trust this save's creator and everyone who could have changed the file?"
 
     # renpy/common/00gui.rpy:460
     old "Do you trust the device the save was created on? You should only choose yes if you are the device's sole user."
@@ -542,10 +538,8 @@ translate None strings:
     new "Skip Mode"
 
     # renpy/common/00library.rpy:335
-    old "This program contains free software under a number of licenses, including the MIT License and GNU Lesser General Public License. A complete list of software, including links to full source code, cshow ast neu with dissolve
-    a be found {a=https://www.renpy.org/l/license}here{/a}."
-    new "This program contains free software under a number of licenses, including the MIT License and GNU Lesser General Public License. A complete list of software, including links to full source code, cshow ast neu with dissolve
-    a be found {a=https://www.renpy.org/l/license}here{/a}."
+    old "This program contains free software under a number of licenses, including the MIT License and GNU Lesser General Public License. A complete list of software, including links to full source code, can be found {a=https://www.renpy.org/l/license}here{/a}."
+    new "This program contains free software under a number of licenses, including the MIT License and GNU Lesser General Public License. A complete list of software, including links to full source code, can be found {a=https://www.renpy.org/l/license}here{/a}."
 
     # renpy/common/00preferences.rpy:290
     old "display"
@@ -816,10 +810,8 @@ translate None strings:
     new "The Ren'Py Sync server timed out."
 
     # renpy/common/00sync.rpy:197
-    old "show ast neu with dissolve
-    a unknown error occurred while connecting to the Ren'Py Sync server."
-    new "show ast neu with dissolve
-    a unknown error occurred while connecting to the Ren'Py Sync server."
+    old "an unknown error occurred while connecting to the Ren'Py Sync server."
+    new "an unknown error occurred while connecting to the Ren'Py Sync server."
 
     # renpy/common/00sync.rpy:213
     old "The Ren'Py Sync server does not have a copy of this sync. The sync ID may be invalid, or it may have timed out."
@@ -842,10 +834,8 @@ translate None strings:
     new "The sync belongs to a different game."
 
     # renpy/common/00sync.rpy:383
-    old "The sync contains a file with show ast neu with dissolve
-    a invalid name."
-    new "The sync contains a file with show ast neu with dissolve
-    a invalid name."
+    old "The sync contains a file with an invalid name."
+    new "The sync contains a file with an invalid name."
 
     # renpy/common/00sync.rpy:440
     old "This will upload your saves to the {a=https://sync.renpy.org}Ren'Py Sync Server{/a}.\nDo you want to continue?"
@@ -876,12 +866,8 @@ translate None strings:
     new "The Sync ID is:"
 
     # renpy/common/00sync.rpy:522
-    old "You cshow ast neu with dissolve
-    a use this ID to download your save on another device.\nThis sync will expire in show ast neu with dissolve
-    a hour.\nRen'Py Sync is supported by {a=https://www.renpy.org/sponsors.html}Ren'Py's Sponsors{/a}."
-    new "You cshow ast neu with dissolve
-    a use this ID to download your save on another device.\nThis sync will expire in show ast neu with dissolve
-    a hour.\nRen'Py Sync is supported by {a=https://www.renpy.org/sponsors.html}Ren'Py's Sponsors{/a}."
+    old "You can use this ID to download your save on another device.\nThis sync will expire in an hour.\nRen'Py Sync is supported by {a=https://www.renpy.org/sponsors.html}Ren'Py's Sponsors{/a}."
+    new "You can use this ID to download your save on another device.\nThis sync will expire in an hour.\nRen'Py Sync is supported by {a=https://www.renpy.org/sponsors.html}Ren'Py's Sponsors{/a}."
 
     # renpy/common/00sync.rpy:526
     old "Continue"
@@ -920,20 +906,16 @@ translate None strings:
     new "File list digest does not match."
 
     # renpy/common/00updater.rpy:765
-    old "show ast neu with dissolve
-    a error is being simulated."
-    new "show ast neu with dissolve
-    a error is being simulated."
+    old "an error is being simulated."
+    new "an error is being simulated."
 
     # renpy/common/00updater.rpy:953
     old "Either this project does not support updating, or the update status file was deleted."
     new "Either this project does not support updating, or the update status file was deleted."
 
     # renpy/common/00updater.rpy:967
-    old "This account does not have permission to perform show ast neu with dissolve
-    a update."
-    new "This account does not have permission to perform show ast neu with dissolve
-    a update."
+    old "This account does not have permission to perform an update."
+    new "This account does not have permission to perform an update."
 
     # renpy/common/00updater.rpy:970
     old "This account does not have permission to write the update log."
@@ -960,10 +942,8 @@ translate None strings:
     new "Updater"
 
     # renpy/common/00updater.rpy:2029
-    old "show ast neu with dissolve
-    a error has occured:"
-    new "show ast neu with dissolve
-    a error has occured:"
+    old "an error has occured:"
+    new "an error has occured:"
 
     # renpy/common/00updater.rpy:2031
     old "Checking for updates."
@@ -1022,10 +1002,8 @@ translate None strings:
     new "The game data has been downloaded."
 
     # renpy/common/00updater.rpy:2086
-    old "show ast neu with dissolve
-    a error occured when trying to download game data:"
-    new "show ast neu with dissolve
-    a error occured when trying to download game data:"
+    old "an error occured when trying to download game data:"
+    new "an error occured when trying to download game data:"
 
     # renpy/common/00updater.rpy:2091
     old "This game cannot be run until the game data has been downloaded."
@@ -1152,20 +1130,16 @@ translate None strings:
     new "This computer has a problem displaying graphics: [problem]."
 
     # renpy/common/00gltest.rpy:257
-    old "Its graphics drivers may be out of date or not operating correctly. This cshow ast neu with dissolve
-    a lead to slow or incorrect graphics display."
-    new "Its graphics drivers may be out of date or not operating correctly. This cshow ast neu with dissolve
-    a lead to slow or incorrect graphics display."
+    old "Its graphics drivers may be out of date or not operating correctly. This can lead to slow or incorrect graphics display."
+    new "Its graphics drivers may be out of date or not operating correctly. This can lead to slow or incorrect graphics display."
 
     # renpy/common/00gltest.rpy:261
     old "The {a=edit:1:log.txt}log.txt{/a} file may contain information to help you determine what is wrong with your computer."
     new "The {a=edit:1:log.txt}log.txt{/a} file may contain information to help you determine what is wrong with your computer."
 
     # renpy/common/00gltest.rpy:266
-    old "More details on how to fix this cshow ast neu with dissolve
-    a be found in the {a=[url]}documentation{/a}."
-    new "More details on how to fix this cshow ast neu with dissolve
-    a be found in the {a=[url]}documentation{/a}."
+    old "More details on how to fix this can be found in the {a=[url]}documentation{/a}."
+    new "More details on how to fix this can be found in the {a=[url]}documentation{/a}."
 
     # renpy/common/00gltest.rpy:271
     old "Continue, Show this warning again"
@@ -1228,10 +1202,8 @@ translate None strings:
     new "Copies the traceback.txt file to the clipboard as Markdown for Discord."
 
     # renpy/common/_errorhandling.rpym:715
-    old "show ast neu with dissolve
-    a exception has occurred."
-    new "show ast neu with dissolve
-    a exception has occurred."
+    old "an exception has occurred."
+    new "an exception has occurred."
 
     # renpy/common/_errorhandling.rpym:738
     old "Rollback"
@@ -1514,10 +1486,8 @@ translate None strings:
     new "watch <expression>: watch a python expression\n watch short: makes the representation of traced expressions short (default)\n watch long: makes the representation of traced expressions as is"
 
     # renpy/common/00console.rpy:953
-    old "unwatch <expression>: stop watching show ast neu with dissolve
-    a expression"
-    new "unwatch <expression>: stop watching show ast neu with dissolve
-    a expression"
+    old "unwatch <expression>: stop watching an expression"
+    new "unwatch <expression>: stop watching an expression"
 
     # renpy/common/00console.rpy:999
     old "unwatchall: stop watching all expressions"

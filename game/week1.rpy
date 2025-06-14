@@ -7,15 +7,13 @@ label w1mon:
 
     When we occasionally crossed paths we got along just fine. 
 
-    Jessica was always such show ast neu with dissolve
-    a upbeat girl, I thought she was sweet.
+    Jessica was always such an upbeat girl, I thought she was sweet.
 
 
     When I noticed that Jessica was into one of my friends I tried to help set them up.
 
 
-    But... Jessica had taken it as show ast neu with dissolve
-    a insult. She said I was just 'rubbing it in her face'.
+    But... Jessica had taken it as an insult. She said I was just 'rubbing it in her face'.
 
     I didn't know that my friend had a crush on me at the time... but Jessica never gave me the chance to explain.
 
@@ -43,8 +41,7 @@ label w1mon:
 
     So a couple years later when I was transferring colleges and looking for a place to stay--\n
 
-    It was really surprising to get show ast neu with dissolve
-    a offer from Jessica.
+    It was really surprising to get an offer from Jessica.
 
 
     She mentioned sharing a three bed apartment with four other people and I could stay in her room for cheap.
@@ -66,18 +63,15 @@ label w1tue:
         xalign 0.2
     "I enter the bustling cafe and immediately get hit with the smell of bitter coffee and freshly baked bread."
     show nyx hap with dissolve
-    "I quickly hear someone call out to me and the jingling of jewelry before I cshow ast neu with dissolve
-    a even turn around."
+    "I quickly hear someone call out to me and the jingling of jewelry before I can even turn around."
 
     show jes hap with moveinright:
         xalign 0.8
     j "Nyx! It's me Jessica!"
 
     show nyx neu with dissolve
-    "I see a womshow ast neu with dissolve
-    a with pink hair and gold earrings running up to me."
-    "Jessica gives me show ast neu with dissolve
-    a eager hug with a sweet smile on her face."
+    "I see a woman with pink hair and gold earrings running up to me."
+    "Jessica gives me an eager hug with a sweet smile on her face."
 
     j "Oh! It's so good to see you! How long has it been? Two or three years?"
 
@@ -136,8 +130,7 @@ label w1tue:
 
     show jes neu with dissolve
     j "So there's Astin,{w=.5} Elias,{w=.5} Pierre,{w=.5} and Lucas.{w=.5} I think they're all pretty nice."
-    j "Lucas is a bit closed off and Elias is kinda flirty. But Pierre is a gentlemshow ast neu with dissolve
-    a and Astin's really funny."
+    j "Lucas is a bit closed off and Elias is kinda flirty. But Pierre is a gentleman and Astin's really funny."
 
     show nyx neu with dissolve
     "I nod along as I listen to Jessica. They seem like people I could get along with."
@@ -147,8 +140,7 @@ label w1tue:
 
     "{cps=2}...{/cps}"
     show nyx ano with dissolve
-    "{cps=20}What the hell did she meshow ast neu with dissolve
-    a by my 'past'?{/cps}"
+    "{cps=20}What the hell did she mean by my 'past'?{/cps}"
 
     n "Excuse me?"
 
@@ -198,8 +190,7 @@ label w1tue:
     n "See you tomorrow, Jessie~"
 
     hide nyx with moveoutright
-    "I cshow ast neu with dissolve
-    a practically feel Jessica's glare burning through my back as I walk out the door."
+    "I can practically feel Jessica's glare burning through my back as I walk out the door."
     
     scene black with dissolve
 
@@ -209,8 +200,7 @@ label w1wed:
 
     """It's finally time to move in.
     I'm real interested in meeting these guys, especially with whatever bullshit they heard from Jessica.
-    I'm sure this will be show ast neu with dissolve
-    a entertaining introduction."""
+    I'm sure this will be an entertaining introduction."""
 
     scene bg apthall with dissolve
 
@@ -223,8 +213,7 @@ label w1wed:
         xalign 0.8
     j "Nyx! I'm so happy you're here!"
 
-    """Jessica suddenly embraces me into show ast neu with dissolve
-    a almost bone crushing hug.'
+    """Jessica suddenly embraces me into an almost bone crushing hug.'
     I'm about to shove her off of me when I suddenly notice some men in the living room behind her.
     I quickly adapt and return the hug."""
 
@@ -250,8 +239,7 @@ label w1wed:
     a "Yo, I've heard a lot about you from Jessica! Uh, mostly good things."
 
     "He's quick to correct himself."
-    "He seems sweet but I cshow ast neu with dissolve
-    a imagine it's a little hard to be friendly to someone you've only heard awful things about."
+    "He seems sweet but I can imagine it's a little hard to be friendly to someone you've only heard awful things about."
 
     "I give Astin a friendly smile."
 
@@ -259,11 +247,9 @@ label w1wed:
 
     "Astin seems to brighten a bit from my laid back demeanor."
 
-    "Then the... extravagantly dressed mshow ast neu with dissolve
-    a decides to introduce himself."
+    "Then the... extravagantly dressed man decides to introduce himself."
 
-    e "My, My~ I didn't expect our new roommate to be such a stunning woman. My name is Elias, I hope we cshow ast neu with dissolve
-    a get to know each other."
+    e "My, My~ I didn't expect our new roommate to be such a stunning woman. My name is Elias, I hope we can get to know each other."
 
     "Ah... he'd be charming if he was being genuine."
 
@@ -273,36 +259,30 @@ label w1wed:
 
     "Jessica quickly interrupts Elias."
 
-    j "Alright, lovebirds. The two of you cshow ast neu with dissolve
-    a flirt later. Anyways, Nyx, this is Pierre."
+    j "Alright, lovebirds. The two of you can flirt later. Anyways, Nyx, this is Pierre."
 
-    "Jessica looks over at the blonde mshow ast neu with dissolve
-    a hoping he would introduce himself."
+    "Jessica looks over at the blonde man hoping he would introduce himself."
     "Pierre takes a sip of his tea before speaking softly."
 
     p "A pleasure to meet you, madame."
 
-    "He seems like a gentlemshow ast neu with dissolve
-    a but a bit quiet."
+    "He seems like a gentleman but a bit quiet."
 
     j "Pierre isn't really the talkative type but he's charming. You'll get used to it."
 
-    "Jessica then cranes her neck to look over at the stoic mshow ast neu with dissolve
-    a reading on the couch."
+    "Jessica then cranes her neck to look over at the stoic man reading on the couch."
 
     j "Oh and over there is Lucas. He's pretty reserved so you should probably just leave him alone."
 
     """Lucas doesn't bother to acknowledge my presence or he may not even realize I'm there.
 
-    I cshow ast neu with dissolve
-    a respect wanting to keep to yourself, probably should be grateful I even got to see such a recluse."""
+    I can respect wanting to keep to yourself, probably should be grateful I even got to see such a recluse."""
 
     scene bg aptint with dissolve
 
     show jes hap with dissolve:
         xalign 0.8
-    j "Now that introductions are all done I cshow ast neu with dissolve
-    a tell you about the rules! After that I'll show you around the house."
+    j "Now that introductions are all done I can tell you about the rules! After that I'll show you around the house."
 
     show nyx q with dissolve:
         xalign 0.2
@@ -326,8 +306,7 @@ label w1wed:
 
     Astin waves me bye as he rushes out of the apartment. He probably has class.
 
-    As soon as we're out of sight from the guys she drops my hand and looks at me with show ast neu with dissolve
-    a annoyed expression."""
+    As soon as we're out of sight from the guys she drops my hand and looks at me with an annoyed expression."""
 
     show jes ano with dissolve
     j "I see you're already getting pretty friendly. But I recommend you lay off."
@@ -336,8 +315,7 @@ label w1wed:
 
     "I hold back a laugh."
 
-    n "You really overestimate yourself sometimes. I don't think they're as whipped as you like to think. A snake cshow ast neu with dissolve
-    a shed its skin, but never change its color."
+    n "You really overestimate yourself sometimes. I don't think they're as whipped as you like to think. A snake can shed its skin, but never change its color."
 
     "Jessica scoffs."
 
@@ -364,8 +342,7 @@ label w1wed:
 
     "Jessica sighs."
 
-    j "As I said everyone does chores around here. If you don't do your part then you cshow ast neu with dissolve
-    a kiss your ass goodbye."
+    j "As I said everyone does chores around here. If you don't do your part then you can kiss your ass goodbye."
 
     n "What's with the hostility? You invite me here and you already want to kick me out? How mean."
 
@@ -415,9 +392,7 @@ label w1thu:
 
     #-Pill Sorting Minigame Tutorial-
 
-    hn "You did show ast neu with dissolve
-    a amazing job, Miss Nyx. I cshow ast neu with dissolve
-    a tell you're made for this job. Please follow me to the receptionist area."
+    hn "You did an amazing job, Miss Nyx. I can tell you're made for this job. Please follow me to the receptionist area."
 
     scene bg clinicent with dissolve
 
@@ -429,8 +404,7 @@ label w1thu:
 
     hn "Mr. Smith needs some medical care. Please send a nurse to his room. Whenever a patient asks about their care, just send a nurse their way."
 
-    hn "This person wants to schedule show ast neu with dissolve
-    a appointment. Go ahead and arrange a time for them."
+    hn "This person wants to schedule an appointment. Go ahead and arrange a time for them."
 
     #-End Tutorial-
 
@@ -489,8 +463,7 @@ label w1fri:
         "Have a walk around the strip mall":
             jump StripMallElias
 
-        "Take show ast neu with dissolve
-    a extra shift at the clinic":
+        "Take an extra shift at the clinic":
             jump ClinicPierre
 
         "Do some reps at the gym":
