@@ -24,6 +24,7 @@ image jes ino = "p"
 image ast neu = "p"
 image ast hap = "p"
 image ast ano = "p"
+image ast pou = "p"
 image ast tea = "p"
 image ast flu = "p"
 image ast cur = "p"
@@ -32,7 +33,7 @@ image ast cur = "p"
 image eli neu = "p"
 image eli hap = "p"
 image eli ano = "p"
-image eli smu = "p"
+image eli coc = "p"
 image eli flu = "p"
 image eli cur = "p"
 
@@ -50,8 +51,7 @@ image luc hap = "p"
 image luc ano = "p"
 image luc col = "p"
 image luc flu = "p"
-#can't be int, ntg = intrigued v
-image luc ntg = "p"
+image luc cur = "p"
 
 ####CGs####
 #Astin

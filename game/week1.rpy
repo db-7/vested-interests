@@ -461,7 +461,7 @@ label w1fri:
             jump CompLabAstin
 
         "Have a walk around the strip mall":
-            jump StripMallElias
+            jump MallElias
 
         "Take an extra shift at the clinic":
             jump ClinicPierre
@@ -469,7 +469,7 @@ label w1fri:
         "Do some reps at the gym":
             jump GymLucas
 
-
+#Solo Encounters
 label CompLabAstin:
     """I might as well walk around campus and stop by the computer lab.
 
@@ -522,7 +522,7 @@ label CompLabAstin:
 
     """Astin sighs softly as he leaves the raid and begins to sulk.
 
-    Maybe I went a little too hard on him.
+    Maybe I went a {i}little{/i} too hard on him.
 
     Maybe I should message the poor guy."""
 
@@ -536,7 +536,7 @@ label CompLabAstin:
             "Astin turns back with a look of confusion before he recognizes me."
 
             show ast flu with dissolve
-            a "Nyx?! Wait, wait, wait. You were NightGoddess?"
+            a "Nyx?! Wait, wait, wait. {i}You{/i} were NightGoddess?"
 
             "Astin takes a seat next to me with an incredulous look on his face."
 
@@ -556,7 +556,7 @@ label CompLabAstin:
             show ast hap with dissolve
             a "Really?! I've just been hopping around guilds trying to find a decent one."
             show nyx sch with dissolve
-            n "Yeah, I'll invite you... if you manage to beat me in a round of PvP."
+            n "Yeah, I'll invite you... {i}if{/i} you manage to beat me in a round of PvP."
             show ast tea with dissolve
             a "Oh, you're on!"
 
@@ -571,4 +571,229 @@ label CompLabAstin:
         "Just keep playing":
             "not written yet"
             jump endfri1
+label MallElias:
+    """Fortunately, the mall is in a convenient area between my apartment and campus.
+
+    It's big as hell though, what mall needs five whole floors?
+
+
+    As I window shop a bit and figure out where my favorite stores may be I hear a familiar voice."""
+
+    show eli coc with dissolve:
+        xalign 0.8
+    e  "And who is this pretty lady I see, hm? Maybe my dearest new roommate?"
+
+    "Elias saunters into my view carrying an expensive looking handbag."
+
+    show nyx neu with dissolve:
+        xalign 0.2
+    "Ah... Hello, Elias. What a surprise to see you here. I was just window shopping."
+
+    show eli coc with dissolve
+    e  "A delightful surprise really. You don't mind if I join you right?"
+
+    show nyx shr with dissolve
+    n "Sure. It'd be nice to have some company I guess."
+
+    "Elias smoothly walks by my side as I look around the various stores."
+
+    show eli neu with dissolve
+    e "Oh that dress would look wonderful on you. Want me to buy it?"
+
+    "I let out a surprised laugh."
+
+    show nyx shr with dissolve
+    "What? You would really buy a dress for someone that you just met?"
+    show eli coc with dissolve
+    e  "Only for a beauty like you, love."
+    show nyx neu with dissolve
+    n "I appreciate the thought but no thanks."
+
+    "Elias raises his hands in mock surrender and leaves the idea alone."
+
+    show eli neu with dissolve
+    e "Why don't we stop by the food court? It's not too busy around this time."
+
+    "Elias already starts leading me to the food court before I can respond."
+
+    scene black with dissolve
+    pause(0.5)
+    scene bg foodcourt with dissolve
+    "The food court reeked of greasy food while the various chatter coming from the crowd blended into a muted white noise"
+
+    show nyx shr with dissolve:
+        xalign 0.2
+    n "... Are you even able to eat anything here?"
+    show eli cur with dissolve:
+        xalign 0.8
+    e "What do you mean? The food is fine."
+    show nyx neu with dissolve
+    n "No. I meant like... you don't seem to be the type that would eat something so pedestrian, I guess."
+    show eli hap with dissolve
+    e "I like fast food just fine, darling. I'm not that haughty."
+    show nyx hap with dissolve
+    n "Not sure if I believe that one."
+    menu:
+        "Offer to buy food":
+            $ epts += 1
+            show nyx neu with dissolve
+            n "I'm getting something from the burger joint over there. Why don't you grab us a table while I place an order?"
+            show eli hap with dissolve
+            e "Ah of course. Here let me get you my card..."
+
+            "I wave dismissively at Elias."
+
+            show nyx shr with dissolve
+            n "Nah, I got it. Is there something specific you want?"
+            show eli flu with dissolve
+            e "..."
+            show eli hap with dissolve
+            e "Anything is fine. Just make sure there's no pickles on my burger, love."
+
+            """Elias winks at me before leaving to find a free table.
+
+            Why was he blushing like that? Kinda odd."""
+
+            """I order two cheeseburger combos and look around for Elias while I wait.
+
+            He sits at a table a bit away from me and it seems like...
+
+            Is he staring at me?
+
+            Eh. He's probably just making sure I get everything alright."""
+
+            """I thank the worker that hands me my order on a tray before I head towards Elias.
+
+            He quickly looks away and tries to pretend he wasn't staring at me by turning on his phone."""
+
+            show nyx neu with dissolve
+            n "Looking at the weather app or something?"
+            show eli flu with dissolve
+            e "What? No, of course not. I'm busy... texting someone important."
+
+            "I snort softly and place the tray down in between us."
+
+            show nyx hap with dissolve
+            n "Right. I got you a burger, fries, and a cola. No pickles on your burger."
+            show eli hap with dissolve
+            e "Thanks, doll. I haven't indulged in some junk food for a while."
+            n "A college student's diet should consist of at least eighty-five percent pure, processed garbage."
+            show eli cur with dissolve
+            e "And what about the other fifteen percent?"
+            show nyx neu with dissolve
+            n "That's the occasional salad when you're feeling guilty and the home cooked meals you get visiting your family."
+
+            "Elias genuinely laughs at my horrible joke."
+
+            show eli hap with dissolve
+            e "If you can stay fit like that by eating eighty-five percent junk food then I must be doing something wrong."
+            show nyx shr with dissolve
+            n "It all depends on the kind of crap you eat. Lots of protein and carbs but minimal sugars and fats."
+
+            "Elias holds up his cheeseburger."
+
+            show eli cur with dissolve
+            e "Hm. Then does this count as protein and carbs?"
+            show nyx hap with dissolve
+            n "Hell yeah it does. Hurry up and eat. I want to check out the rest of the mall."
+
+            "Elias and I end up staying at the mall until late evening and Elias dramatically parts from me."
+
+            show eli coc with dissolve
+            e "I'm truly sorry, my sweet, but I must leave you by your lonesome. I have a prior meeting to attend to."
+
+            "I roll my eyes at his antics."
+
+            show nyx neu with dissolve
+            n "Just get going, Elias. See you back at the apartment."
+            jump endfri1
+        "Order your own food":
+            "not written yet"
+            jump endfri1
+label ClinicPierre:
+    "While I have the free time I may as well just pick up someone's shift."
+
+    scene bg clinicent with dissolve
+    show nyx neu with dissolve:
+        xalign 0.2
+    "The clinic is bustling as usual and Nurse Freya looks relieved to see me."
+
+    hn "Oh I'm so glad you're here, Miss Nyx. Would you mind helping out some of the patients in the minor injury unit?"
+    n "Of course, Nurse Freya. Please try to find some time to take a break, you look quite frazzled."
+    hn "I'll sleep when I'm dead. Everything will be fine, dear."
+
+    "Nurse Freya gives me a pat on the back before hurrying to help another patient."
+
+    scene bg clinichall with dissolve
+    """In the MIU I help the other nurses with their patients.
+
+    Although it is certainly less busy the unit is also a bit understaffed."""
+
+    #this was "RN"
+    "Registered Nurse" "Miss Nyx, would you mind helping out the patient in room 122? He just has a sprained ankle."
+    show nyx neu with dissolve
+    n "I'll take care of him right away, Nurse Lynn."
+
+    scene bg clinicroom2 with dissolve
+    show nyx neu with dissolve:
+        xalign 0.2
+    "When I enter room 122, I meet a surprisingly familiar face."
+
+    show pir neu with dissolve:
+        xalign 0.8
+    p "Hello, Madame Nyx. What an unfortunate place for us to meet, non?"
+
+    menu:
+        "Remain professional":
+            $ ppts += 2
+            n "I don't find it too shocking, Mr. Pierre. This is the closest clinic in the area."
+
+            "I move to take a look at Pierre's ankle." 
+
+            n "May I ask how you sprained your ankle, Mr. Pierre? And rate your pain level from one to ten for me."
+            p "I was doing some choreography instruction when I landed awkwardly on my foot. The pain is at about a five right now."
+
+            "I nod and write down his responses."
+
+            n "Have you ever sprained this same ankle before?"
+            show pir cur with dissolve
+            p "Yes, I would say about one or two times now…"
+            p "Does that mean there may be something wrong?"
+            n "Well, constantly spraining the same ankle can cause permanent damage if the ligaments don't heal correctly." 
+
+            "I roll his ankle around a bit."
+
+            n "Seems to be an inversion sprain. How does it feel when I move it?"
+            show pir awk with dissolve
+            p "Ah, it's quite tender and uncomfortable."
+
+            "I hand Pierre some ibuprofen and a cup of water."
+
+            n "Please take this, Mr. Pierre. I will bandage your ankle up and apply a brace."
+
+            """Pierre nods and takes the medicine as I requested.
+
+            I carefully wrap gauze around Pierre's ankle, making sure it's tight enough to provide compression before placing a brace around it."""
+
+            n "Alright, you're fine to go home now. You'll need to rest for at least a week and make sure to follow the RICE protocol."
+            show pir cur with dissolve
+            p "RICE?"
+
+            "I help Pierre stand up before handing him a crutch."
+
+            n "Rest, Ice, Compression, and Elevation."
+            n "You can also take some over the counter pain medication like the ibuprofen I gave you."
+            n "If you feel like you can't properly put weight on your ankle within two weeks then I would recommend getting it properly looked at by your primary care physician."
+            show pir neu with dissolve
+            p "Ah, I had never actually known what that stood for. I will heed your advice. Thank you, Nurse Nyx."
+            n "Miss Nyx is fine. I am only a nursing assistant so please don't call me ‘Nurse' Take care, Mr. Pierre."
+
+            "The rest of my shift for the night is rather uneventful and I wish the nurses the best before I head home."
+            $ inventory.earn(5)
+            jump endfri1
+
+        "Act more familiar":
+            $ ppts -= 1
+            "not written yet"
+            $ inventory.earn(5)
 
