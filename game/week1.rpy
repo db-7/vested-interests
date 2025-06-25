@@ -203,24 +203,26 @@ label w1wed:
     I'm sure this will be an entertaining introduction."""
 
     scene bg apthall with dissolve
-
+    show nyx neu with dissolve:
+        xalign 0.2
     """I've arrived at the apartment complex.
     I'm surprised that it's so nice considering the cheap rent I'll be paying.
 
     I knock on the door and barely have to wait when Jessica quickly swings the door open."""
 
     show jes hap with moveinright:
-        xalign 0.8
+        xalign 0.3
     j "Nyx! I'm so happy you're here!"
 
     """Jessica suddenly embraces me into an almost bone crushing hug.'
     I'm about to shove her off of me when I suddenly notice some men in the living room behind her.
     I quickly adapt and return the hug."""
 
-    show nyx hap with moveinleft:
-        xalign 0.2
+    show nyx hap with dissolve
     "Ah, Jess, you practically knocked me off my feet there."
 
+    show jes hap with moveoutright:
+        xalign 0.8
     "Jessica giggles and lets go of me."
 
     show jes ino with dissolve
@@ -374,14 +376,14 @@ label w1wed:
 #Thursday - Work
 label w1thu:
     scene bg clinicent with dissolve
+    show nyx neu with dissolve:
+        xalign 0.2
     """I head to the clinic early in the morning to start my training.
     
     The clinic bustles with people going in and out of the many facility rooms.
     The strong scent of antiseptic and bleach permeates the air of the sterile environment.
     I stop in front of the receptionist desk to retrieve my ID and scrubs."""
 
-    show nyx neu with moveinleft:
-        xalign 0.2
     "Hello, my name is Nyx. I'm here as a nursing assistant."
 
     hn "Ah, great. You're here right on time, Miss Nyx. Here's your ID, please change into this pair of scrubs and I'll show you to your station."
@@ -408,7 +410,7 @@ label w1thu:
 
     #-End Tutorial-
 
-    show nyx neu with moveinleft:
+    show nyx neu with dissolve:
         xalign 0.2
     hn "You've done a wonderful job in your training today, Miss Nyx. Please discard your scrubs and sanitize your hands when you leave. Have a good night."
 
@@ -416,30 +418,6 @@ label w1thu:
 
     """Nurse Freya laughs a bit as she waves me bye.
     I suppose that a peaceful night shift at the clinic is unlikely."""
-
-    scene bg aptliving with dissolve
-
-    """It's dark when I get back to the apartment and it seems like everyone's already asleep.
-    Then I hear a quiet 'Yo!' Coming from the couch."""
-
-    show ast neu with moveinright:
-        xalign 0.8
-    a "Hey, Nyx! You're back pretty late, huh?"
-
-    show nyx neu with moveinleft:
-        xalign 0.2
-    n "Is it that late? I just finished my first shift at the clinic."
-
-    show ast cur with dissolve
-    a "The clinic? Ah, I think Jessica mentioned you're a nursing major."
-    show ast neu with dissolve
-    "I was actually hoping to catch you before you went to bed. Tomorrow we're all having a game night. I figured that you might want to join us but no pressure!"
-
-    show nyx hap with dissolve
-    n "Thanks, Astin. I'll be sure to hang out with you all tomorrow."
-
-    show ast hap with dissolve
-    a "Great! Uh, have a goodnight, Nyx."
 
     scene black with dissolve
 
@@ -476,7 +454,7 @@ label CompLabAstin:
     I think my guild is doing a raid today anyways it'd be fun to beat some noobs."""
 
     scene bg complab with dissolve
-    show nyx neu with moveinleft:
+    show nyx neu with dissolve:
         xalign 0.2
     """After a quick look at the campus map I head straight towards the computer lab.
 
@@ -796,4 +774,102 @@ label ClinicPierre:
             $ ppts -= 1
             "not written yet"
             $ inventory.earn(5)
+label GymLucas:
+    """I'll just hit up the gym since I've been slacking a bit.
+
+    I'm pretty sure this apartment complex has a decent fitness center."""
+
+    scene bg gym with dissolve
+    show nyx neu with dissolve:
+        xalign 0.2
+    """The fitness center is an adequate size and has a large variety of equipment.
+
+    It's relatively empty except for two ladies on the treadmills and a man on the bench doing dumbbell presses.
+
+    As I pass the bench press I recognize the man."""
+
+    show nyx shr with dissolve
+    n "Lucas? I didn't expect to see you here."
+
+    """Lucas doesn't respond and just continues his dumbbell presses.
+
+    Maybe he didn't hear me because he has headphones in?"""
+
+    menu:
+        "Try to start a conversation":
+            $ lpts -= 1
+            show nyx neu with dissolve
+            n "Hey, it's Nyx. Good to see you, Lucas."
+            show luc col with dissolve
+            l "..."
+            n "I should have realized that you were the type to work out considering your physique. I could spot-"
+
+            "Lucas interrupts me with an annoyed sigh."
+
+            show luc ano with dissolve
+            l "Can't you take a hint? Leave me alone."
+            show nyx flu with dissolve
+            n "Oh, sorry."
+
+            """Lucas moves onto another machine leaving me standing there awkwardly.
+
+            I guess he isn't the type for small talk.
+
+            I shrug it off and do some light stretches before weightlifting."""
+            jump endfri1
+        "Start working out":
+            $ lpts += 1
+            """I move onto the leg press machine even though I'm a bit unfamiliar with it.
+
+            As I do some reps I hear Lucas sigh and approach me."""
+
+            show luc ano with dissolve
+            l "Your posture is all wrong. You're going to hurt yourself doing it like that." 
+
+            show nyx shr with dissolve
+            n "Really? How? It seems simple enough." 
+
+            "Lucas pulls up the sled and adjusts my legs."
+
+            show luc neu with dissolve
+            l "Your feet don't need to be that high. And stop locking out your knees, you're putting stress on the joints."
+
+            "I try my reps again and it does admittedly feel much better."
+
+            show nyx neu with dissolve
+            n "Thanks, Lucas."
+            l "Don't bother. If you need someone to spot you then come to me."
+
+            "That's surprisingly nice of him."
+
+            n "Ah, yeah. Sure. I can spot you too."
+
+            "Lucas gives me a curt nod before putting his earbuds back in and moves onto another piece of equipment."
+            jump endfri1
+label endfri1:
+    scene black with dissolve
+    scene bg aptliving with dissolve
+
+    """It's dark when I get back to the apartment and it seems like everyone's already asleep.
+    Then I hear a quiet 'Yo!' Coming from the couch."""
+
+    show ast neu with moveinright:
+        xalign 0.8
+    a "Hey, Nyx! You're back pretty late, huh?"
+
+    show nyx neu with moveinleft:
+        xalign 0.2
+    n "Is it that late? I just finished my first shift at the clinic."
+
+    show ast cur with dissolve
+    a "The clinic? Ah, I think Jessica mentioned you're a nursing major."
+    show ast neu with dissolve
+    "I was actually hoping to catch you before you went to bed. Tomorrow we're all having a game night. I figured that you might want to join us but no pressure!"
+
+    show nyx hap with dissolve
+    n "Thanks, Astin. I'll be sure to hang out with you all tomorrow."
+
+    show ast hap with dissolve
+    a "Great! Uh, have a goodnight, Nyx."
+    scene black with dissolve
 
