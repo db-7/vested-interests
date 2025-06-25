@@ -60,13 +60,13 @@ label w1mon:
 label w1tue:
     scene bg cafe with dissolve
     show nyx neu with dissolve:
-        xalign 0.2
+        xalign 0.8
     "I enter the bustling cafe and immediately get hit with the smell of bitter coffee and freshly baked bread."
     show nyx hap with dissolve
     "I quickly hear someone call out to me and the jingling of jewelry before I can even turn around."
 
-    show jes hap with moveinright:
-        xalign 0.8
+    show jes hap with moveinleft:
+        xalign 0.2
     j "Nyx! It's me Jessica!"
 
     show nyx neu with dissolve
@@ -102,7 +102,7 @@ label w1tue:
 
     j "Hm. That's interesting. I didn't know you were the compassionate type."
 
-    show nyx q with dissolve
+    show nyx shr with dissolve
     #idk what q is...
     "I feel confused by her statement, but I brush it off so I could ask a more important question."
 
@@ -164,11 +164,11 @@ label w1tue:
 
     show jes ano with dissolve
     show jes ano with MoveTransition(0.1):
-        xalign 0.75
+        xalign 0.25
     show jes ano with MoveTransition(0.1):
-        xalign 0.85
+        xalign 0.01
     show jes ano with MoveTransition(0.5):
-        xalign 0.8
+        xalign 0.2
 
     "Jessica scowls and rips her hands away from me."
 
@@ -204,13 +204,13 @@ label w1wed:
 
     scene bg apthall with dissolve
     show nyx neu with dissolve:
-        xalign 0.2
+        xalign 0.8
     """I've arrived at the apartment complex.
     I'm surprised that it's so nice considering the cheap rent I'll be paying.
 
     I knock on the door and barely have to wait when Jessica quickly swings the door open."""
 
-    show jes hap with moveinright:
+    show jes hap with moveinleft:
         xalign 0.3
     j "Nyx! I'm so happy you're here!"
 
@@ -222,7 +222,7 @@ label w1wed:
     "Ah, Jess, you practically knocked me off my feet there."
 
     show jes hap with moveoutright:
-        xalign 0.8
+        xalign 0.2
     "Jessica giggles and lets go of me."
 
     show jes ino with dissolve
@@ -283,11 +283,11 @@ label w1wed:
     scene bg aptint with dissolve
 
     show jes hap with dissolve:
-        xalign 0.8
+        xalign 0.2
     j "Now that introductions are all done I can tell you about the rules! After that I'll show you around the house."
 
-    show nyx q with dissolve:
-        xalign 0.2
+    show nyx shr with dissolve:
+        xalign 0.8
     n "Rules?"
 
     show jes neu with dissolve
@@ -329,12 +329,14 @@ label w1wed:
     """Jessica finally shows me our shared room.
     Something immediately stands out to me."""
 
-    show nyx q with dissolve
+    show nyx shr with dissolve:
+        xalign 0.8
     n "Bunk beds? Are you five?"
 
     "Jessica rolls her eyes."
 
-    show jes neu with dissolve
+    show jes neu with dissolve:
+        xalign 0.2
     j "Just shut up. You're lucky you even get to sleep in a bed."
 
     "I raise my hands in a gesture of mock surrender."
@@ -368,7 +370,9 @@ label w1wed:
     #more like "so adorable <333333"
 
     """I move in my boxes and unpack, by the time I finish it's already late in the evening.
+
     I have to go to the clinic tomorrow for my first day so I just hit the hay early.
+
     I really can't believe I'm sleeping on a bunk bed..."""
 
     scene black with dissolve
@@ -377,14 +381,16 @@ label w1wed:
 label w1thu:
     scene bg clinicent with dissolve
     show nyx neu with dissolve:
-        xalign 0.2
+        xalign 0.8
     """I head to the clinic early in the morning to start my training.
     
     The clinic bustles with people going in and out of the many facility rooms.
+
     The strong scent of antiseptic and bleach permeates the air of the sterile environment.
+    
     I stop in front of the receptionist desk to retrieve my ID and scrubs."""
 
-    "Hello, my name is Nyx. I'm here as a nursing assistant."
+    n "Hello, my name is Nyx. I'm here as a nursing assistant."
 
     hn "Ah, great. You're here right on time, Miss Nyx. Here's your ID, please change into this pair of scrubs and I'll show you to your station."
 
@@ -411,12 +417,13 @@ label w1thu:
     #-End Tutorial-
 
     show nyx neu with dissolve:
-        xalign 0.2
+        xalign 0.8
     hn "You've done a wonderful job in your training today, Miss Nyx. Please discard your scrubs and sanitize your hands when you leave. Have a good night."
 
-    "Thank you, Nurse Freya. I hope you have a nice shift."
+    n "Thank you, Nurse Freya. I hope you have a nice shift."
 
     """Nurse Freya laughs a bit as she waves me bye.
+
     I suppose that a peaceful night shift at the clinic is unlikely."""
 
     scene black with dissolve
@@ -455,7 +462,7 @@ label CompLabAstin:
 
     scene bg complab with dissolve
     show nyx neu with dissolve:
-        xalign 0.2
+        xalign 0.8
     """After a quick look at the campus map I head straight towards the computer lab.
 
     I grab a seat near the back and login to Last Reverie XIV.
@@ -465,7 +472,7 @@ label CompLabAstin:
     I target the supports in 'Ghostfire Crusade' and focus on the highest level player called 'BatterUp!'."""
 
     show ast neu with dissolve:
-        xalign 0.8
+        xalign 0.2
     a "Ack! No, no, no! Where are the tanks?! NightGoddess is about to kill me!"
     hide ast with dissolve
 
@@ -476,7 +483,7 @@ label CompLabAstin:
     That's definitely Astin, I didn't know he played MMPORG's too."""
 
     show ast neu with dissolve:
-        xalign 0.8
+        xalign 0.2
     a "Are all my teammates afk or something?! The Renegades are going to take over the checkpoint but no one is here!"
 
     """Well... I may as well have some fun.
@@ -518,7 +525,7 @@ label CompLabAstin:
 
             "Astin takes a seat next to me with an incredulous look on his face."
 
-            show nyx q with dissolve
+            show nyx shr with dissolve
             n "Yep. Haven't played Last Reverie in a while so I joined the raid today."
             show ast hap with dissolve
             a "I didn't know you were into gaming! I stood no chance against you the whole time!"
@@ -558,13 +565,13 @@ label MallElias:
     As I window shop a bit and figure out where my favorite stores may be I hear a familiar voice."""
 
     show eli coc with dissolve:
-        xalign 0.8
+        xalign 0.2
     e  "And who is this pretty lady I see, hm? Maybe my dearest new roommate?"
 
     "Elias saunters into my view carrying an expensive looking handbag."
 
     show nyx neu with dissolve:
-        xalign 0.2
+        xalign 0.8
     "Ah... Hello, Elias. What a surprise to see you here. I was just window shopping."
 
     show eli coc with dissolve
@@ -600,10 +607,10 @@ label MallElias:
     "The food court reeked of greasy food while the various chatter coming from the crowd blended into a muted white noise"
 
     show nyx shr with dissolve:
-        xalign 0.2
+        xalign 0.8
     n "... Are you even able to eat anything here?"
     show eli cur with dissolve:
-        xalign 0.8
+        xalign 0.2
     e "What do you mean? The food is fine."
     show nyx neu with dissolve
     n "No. I meant like... you don't seem to be the type that would eat something so pedestrian, I guess."
@@ -693,7 +700,7 @@ label ClinicPierre:
 
     scene bg clinicent with dissolve
     show nyx neu with dissolve:
-        xalign 0.2
+        xalign 0.8
     "The clinic is bustling as usual and Nurse Freya looks relieved to see me."
 
     hn "Oh I'm so glad you're here, Miss Nyx. Would you mind helping out some of the patients in the minor injury unit?"
@@ -714,11 +721,11 @@ label ClinicPierre:
 
     scene bg clinicroom2 with dissolve
     show nyx neu with dissolve:
-        xalign 0.2
+        xalign 0.8
     "When I enter room 122, I meet a surprisingly familiar face."
 
     show pir neu with dissolve:
-        xalign 0.8
+        xalign 0.2
     p "Hello, Madame Nyx. What an unfortunate place for us to meet, non?"
 
     menu:
@@ -781,7 +788,7 @@ label GymLucas:
 
     scene bg gym with dissolve
     show nyx neu with dissolve:
-        xalign 0.2
+        xalign 0.8
     """The fitness center is an adequate size and has a large variety of equipment.
 
     It's relatively empty except for two ladies on the treadmills and a man on the bench doing dumbbell presses.
@@ -800,7 +807,8 @@ label GymLucas:
             $ lpts -= 1
             show nyx neu with dissolve
             n "Hey, it's Nyx. Good to see you, Lucas."
-            show luc col with dissolve
+            show luc col with dissolve:
+                xalign 0.2
             l "..."
             n "I should have realized that you were the type to work out considering your physique. I could spot-"
 
@@ -823,7 +831,8 @@ label GymLucas:
 
             As I do some reps I hear Lucas sigh and approach me."""
 
-            show luc ano with dissolve
+            show luc ano with dissolve:
+                xalign 0.2
             l "Your posture is all wrong. You're going to hurt yourself doing it like that." 
 
             show nyx shr with dissolve
@@ -853,12 +862,12 @@ label endfri1:
     """It's dark when I get back to the apartment and it seems like everyone's already asleep.
     Then I hear a quiet 'Yo!' Coming from the couch."""
 
-    show ast neu with moveinright:
-        xalign 0.8
+    show ast neu with moveinleft:
+        xalign 0.2
     a "Hey, Nyx! You're back pretty late, huh?"
 
-    show nyx neu with moveinleft:
-        xalign 0.2
+    show nyx neu with moveinright:
+        xalign 0.8
     n "Is it that late? I just finished my first shift at the clinic."
 
     show ast cur with dissolve
