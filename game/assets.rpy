@@ -2,7 +2,18 @@
 
 #defining assets
 image bg cafe = "bg/cafe.png"
+image bg apthall = "bg/apartment_hallway.png"
+image bg aptint = "bg/living.png"
+image bg bedN = "bg/bedN.png"
+image bg bedS = "bg/bedS.png"
+image bg car = "bg/Car02_day_1920.jpg"
+
+image cg meet = "cg/meet_cg_wip.png"
 image bg juiceshop = "frootjuice.png"
+image mon1 = "cards/mon1.png"
+image tue1 = "cards/tue1.png"
+image wed1 = "cards/wed1.png"
+
 ####SPRITES####
 #nyx sprites
 image nyx neu:

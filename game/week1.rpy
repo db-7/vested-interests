@@ -1,6 +1,7 @@
 #Monday - Intro
 label w1mon:
-    scene black with dissolve
+    scene mon1 with dissolve
+    pause(1.0)
     scene bg bedN with dissolve
     #triple quotes thing needs blank lines between
     """In highschool, Jessica and I were never really in the same circles.\n
@@ -55,9 +56,12 @@ label w1mon:
 
     I think it'll be nice to see her after all this time."""
     scene black with dissolve
+    pause(0.2)
 
 #Tuesday - Meet the Antagonist
 label w1tue:
+    scene tue1 with dissolve
+    pause(1.0)
     scene bg cafe with dissolve
     show nyx neu with dissolve:
         xalign 0.8
@@ -76,7 +80,12 @@ label w1tue:
     j "Oh! It's so good to see you! How long has it been? Two or three years?"
 
     "She quickly leads me to sit at a table with her."
-    show nyx hap with dissolve
+    show jes hap with dissolve:
+        xpos 0
+        zoom 2.0
+    show nyx hap with dissolve:
+        xpos 1800
+        zoom 2.0
     "I guess Jessica is still a bubbly whirlwind of energy. She's almost too much for me to keep up with."
 
     n "Yeah it's been awhile, Jess. You look good, almost didn't recognize you with that pink hair."
@@ -103,12 +112,17 @@ label w1tue:
     j "Hm. That's interesting. I didn't know you were the compassionate type."
 
     show nyx shr with dissolve
-    #idk what q is...
     "I feel confused by her statement, but I brush it off so I could ask a more important question."
 
     n "So what are your roommates like?"
 
+    show jes ano with MoveTransition(0.5):
+        ypos 10
     "For a split second, I thought I saw Jessica's smile drop. A slight grimace forming on her face..."
+    show jes neu with MoveTransition(0.1):
+        ypos -20
+    show jes neu with MoveTransition(0.3):
+        ypos 0
     "But just as quick as I see it, Jessica smiles sweetly again."
     "Odd."
 
@@ -139,7 +153,10 @@ label w1tue:
     j "And of course I told them about you and your past."
 
     "{cps=2}...{/cps}"
-    show nyx ano with dissolve
+    show nyx ano with MoveTransition(0.1):
+        ypos -50
+    show nyx ano with MoveTransition(0.3):
+        ypos 0
     "{cps=20}What the hell did she mean by my 'past'?{/cps}"
 
     n "Excuse me?"
@@ -156,7 +173,8 @@ label w1tue:
 
     n "Oh? Well I really appreciate that, Jessie. Glad I don't have to explain myself to my new roommates. I'm sure we're all gonna get along just fine."
 
-    show nyx hap with dissolve
+    show nyx hap with moveinright:
+        xpos 1700
     "I take Jessica's hands and give them a gentle squeeze."
 
     show nyx sch with dissolve
@@ -164,11 +182,11 @@ label w1tue:
 
     show jes ano with dissolve
     show jes ano with MoveTransition(0.1):
-        xalign 0.25
+        xpos 50
     show jes ano with MoveTransition(0.1):
-        xalign 0.01
+        xpos -250
     show jes ano with MoveTransition(0.5):
-        xalign 0.2
+        xpos 0
 
     "Jessica scowls and rips her hands away from me."
 
@@ -179,6 +197,10 @@ label w1tue:
 
     n "Well how could I when you've set up such a nice story for me? I just hope your lies are better nowadays."
 
+    hide nyx with dissolve
+    show nyx neu with dissolve:
+        zoom 1.0
+        xalign 0.8
     "I stand from my seat and put a five dollar bill down on the table."
 
     show nyx hap with dissolve
@@ -193,9 +215,12 @@ label w1tue:
     "I can practically feel Jessica's glare burning through my back as I walk out the door."
     
     scene black with dissolve
+    pause(0.2)
 
 #Wednesday - Meet the Love Interests
 label w1wed:
+    scene wed1 with dissolve
+    pause(1.0)
     scene bg car with dissolve
 
     """It's finally time to move in.
@@ -210,25 +235,30 @@ label w1wed:
 
     I knock on the door and barely have to wait when Jessica quickly swings the door open."""
 
-    show jes hap with moveinleft:
-        xalign 0.3
+    show jes hap with Dissolve(0.2):
+        xalign 0.2
+    show jes hap with MoveTransition(0.2):
+        xalign 0.7
     j "Nyx! I'm so happy you're here!"
 
-    """Jessica suddenly embraces me into an almost bone crushing hug.'
-    I'm about to shove her off of me when I suddenly notice some men in the living room behind her.
-    I quickly adapt and return the hug."""
+    """Jessica suddenly embraces me into an almost bone crushing hug.
+    I'm about to shove her off of me when I suddenly notice some men in the living room behind her."""
+    show nyx neu with moveinright:
+        xalign 0.75
+    "I quickly adapt and return the hug."
 
-    show nyx hap with dissolve
-    "Ah, Jess, you practically knocked me off my feet there."
+    show nyx hap with moveoutright:
+        xalign 0.8
+    n "Ah, Jess, you practically knocked me off my feet there."
 
     show jes hap with moveoutright:
         xalign 0.2
     "Jessica giggles and lets go of me."
 
     show jes ino with dissolve
-    "I couldn't help it! Even if we saw each other yesterday I still can't believe we'll be living together."
+    j "I couldn't help it! Even if we saw each other yesterday I still can't believe we'll be living together."
     show jes neu with dissolve
-    "Come on, let me introduce you to your new roommates!"
+    j "Come on, let me introduce you to your new roommates!"
 
     scene cg meet with dissolve
 
@@ -376,6 +406,8 @@ label w1wed:
     I really can't believe I'm sleeping on a bunk bed..."""
 
     scene black with dissolve
+    pause(0.2)
+    return
 
 #Thursday - Work
 label w1thu:
