@@ -26,6 +26,11 @@ default persistent.lend = False
 default inventory.money = 0
 default drink = None
 
+#minigame related variables
+default pillScore = 0
+default money_earned = 0
+default what_week = 1
+
 # The game starts here.
 
 label start:

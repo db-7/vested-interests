@@ -398,6 +398,7 @@ label w1wed:
     """Jessica grabs her purse and hurries out of our now shared bedroom.
     So dramatic..."""
     #more like "so adorable <333333"
+    #more like "so dateable <333333333333"
 
     """I move in my boxes and unpack, by the time I finish it's already late in the evening.
 
@@ -431,20 +432,23 @@ label w1thu:
     hn "You'll mainly handle reception duties and giving patients their pills. I'll help you give Mrs. Mason her pills for today and then bring you to the reception desk."
 
     #-Pill Sorting Minigame Tutorial-
-
-    hn "You did an amazing job, Miss Nyx. I can tell you're made for this job. Please follow me to the receptionist area."
+label .afterpill:
 
     scene bg clinicent with dissolve
 
-    hn "A nurse receptionist must greet patients, manage appointments, as well as take calls and answer them accordingly. You will mostly handle the calls for training."
+    hn "You did an amazing job, Miss Nyx. I can tell you're made for this job." #Please follow me to the receptionist area."
+
+    #scene bg clinicent with dissolve
+
+    #hn "A nurse receptionist must greet patients, manage appointments, as well as take calls and answer them accordingly. You will mostly handle the calls for training."
 
     #-Receptionist Minigame-
 
-    hn "Any questions about financial services should go to the billing department. Please transfer the caller to them."
+    #hn "Any questions about financial services should go to the billing department. Please transfer the caller to them."
 
-    hn "Mr. Smith needs some medical care. Please send a nurse to his room. Whenever a patient asks about their care, just send a nurse their way."
+    #hn "Mr. Smith needs some medical care. Please send a nurse to his room. Whenever a patient asks about their care, just send a nurse their way."
 
-    hn "This person wants to schedule an appointment. Go ahead and arrange a time for them."
+    #hn "This person wants to schedule an appointment. Go ahead and arrange a time for them."
 
     #-End Tutorial-
 
