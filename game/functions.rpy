@@ -117,3 +117,179 @@ label shopend:
         jump w2gift
     else:
         "congrats, you broke the game!"
+
+#Pill Sorting Minigame
+
+init python:
+    def slider_update(st):
+        # SpriteManager update function. Runs when the SpriteManager needs to update.
+        # We use this to move the slider from side to side.
+        global slider_speed
+
+        for sprite in slider_sprites:
+            if sprite.type == "slider":
+                if round(sprite.x) < slider_bar_size[0] - slider_size[0] and sprite.direction == "right":
+                    sprite.x += slider_speed * pill_difficulty
+                    
+                elif round(sprite.x) >= slider_bar_size[0] - slider_size[0] and sprite.direction == "right":
+                    sprite.direction = "left"
+                    slider_speed = 2
+                elif round(sprite.x) > 0 and sprite.direction == "left":
+                    sprite.x -= slider_speed * pill_difficulty
+                    
+                elif round(sprite.x) == 0 and sprite.direction == "left":
+                    sprite.direction = "right"
+                    
+        if not stop_slider:
+            return 0
+        else:
+            return None
+
+    def check_slider_safe_zone():
+        # Function to check if the user has successfully gotten the timing correct.
+        global pill_dispensed
+        global pill_dispense_tries
+        global stop_slider
+        global pillScore
+
+        for slider in slider_sprites:
+            if slider.type == "slider":
+                for safe_zone in slider_sprites:
+                    if safe_zone.type == "safe-zone":
+                        if safe_zone.x < slider.x < safe_zone.x + safe_zone_size[0]:
+                            # Slider is overlapping the safe-zone. The user has successfully opened the chest.
+                            pill_dispensed = True
+                            stop_slider = True
+                            pillScore += 1
+                            renpy.play("audio/open-door.ogg", "sound")
+                        elif pill_dispense_tries > 0:
+                            # Slider missed the safe-zone. We remove 1 from their attempts.
+                            renpy.play("audio/error.ogg", "sound")
+                            pill_dispense_tries -= 1
+                        if pill_dispense_tries == 0:
+                            # User used up all their attempts and failed. We show them the game_over screen.
+                            renpy.hide_screen("pill_minigame")
+                            renpy.show_screen("game_over")
+                            stop_slider = True
+
+    def reset_pill_minigame():
+        # Function to reset the mini-game so it can be played again.
+        global pill_dispensed
+        global pill_dispense_tries
+        global stop_slider
+        global slider_speed
+
+        pill_dispensed = False
+        pill_dispense_tries = 2
+        stop_slider = False
+        slider_speed = 2
+
+        for sprite in slider_sprites:
+            if sprite.type == "slider":
+                sprite.x = 0
+            elif sprite.type == "safe-zone":
+                random_x = renpy.random.randint(0, slider_bar_size[0] - safe_zone_size[0])
+                sprite.x = random_x
+
+        slider_SM.redraw(0)
+        renpy.restart_interaction()
+    
+    def total_earnings():
+        global pillScore
+        global money_earned
+        
+        if pillScore < 3:
+            money_earned == 5
+        elif pillScore >= 3:
+            money_earned == 10
+        elif pillScore >= 7:
+            money_earned == 15
+
+
+transform half_size:
+    zoom 0.5
+
+transform pill_transform:
+    zoom 0.5
+    anchor (0.5, 0.5)
+    align (0.5, 0.7)
+    subpixel True
+    on hover:
+        easein 1.0 zoom 0.51
+    on idle:
+        easein 1.0 zoom 0.5
+
+transform pill_dispensed_anim:
+    zoom 0.5
+    alpha 0.0
+    parallel:
+        easein 3.0 zoom 0.7
+    parallel:
+        easein 2.0 alpha 1.0
+
+screen game_over:
+    modal True
+    key "mousedown_1" action [Hide("pill_minigame"), Function(reset_pill_minigame), Function(total_earnings), Jump("aftergame")]
+    frame:
+        background "#00000080"
+        xfill True
+        yfill True
+        frame:
+            background "#FFFFFFE6"
+            xfill True
+            padding (15, 0)
+            align (0.5, 0.5)
+            text "Game Over!" color "#000000" size 34 xalign 0.5
+
+screen pill_minigame:
+    on "show" action Function(reset_pill_minigame)
+    key ["mousedown_1"] action If(pill_dispensed, true = [Hide("pill_minigame", transition = Fade(1, 1, 1)), Show("pill_minigame")], false = Function(check_slider_safe_zone))
+    image "background.png" at half_size
+    text "Pills Dispensed: [pillScore]"
+
+    if not pill_dispensed:
+        frame:
+            background "#FFFFFF"
+            padding (5, 5)
+            align (0.5, 0.3)
+            text "Attempts left: [pill_dispense_tries]" size 18 color "#000000" text_align 0.5
+        frame:
+            background None
+            align (0.5, 0.4)
+            xysize slider_bar_size
+            image "slider-bar.png" at half_size
+            add slider_SM
+        image "pillcup_empty_idle.png" align (0.5, 0.7) at half_size
+    else:
+        image "pillcup_full.png" align (0.5, 0.7) at pill_dispensed_anim
+        
+screen minigame:
+    timer 30.0 action Show("game_over")
+
+    image "bg/.png" at half_size
+    #text "Chests Unlocked: [pillScore]"
+    
+    use pill_minigame
+    
+
+label aftergame:
+
+    if pillScore < 5:
+        $ money_earned = 5
+    elif pillScore >= 5 and < 10:
+        $ money_earned = 10
+    else:
+        $ money_earned = 15
+
+
+    "After a hard day's work, you have earned $[money_earned]."
+
+    $ inventory.money = money_earned + inventory.money 
+
+
+    if what_week == 1:
+        jump w1thu.afterpill
+    elif what_week == 2:
+        jump w2tue.afterpill
+    elif what_week == 3: 
+        jump w3tue.afterpill
