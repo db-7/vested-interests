@@ -127,7 +127,7 @@ init python:
         global slider_speed
 
         for sprite in slider_sprites:
-            if sprite.type == "slider":
+            if sprite.type == "minigame/slider.png":
                 if round(sprite.x) < slider_bar_size[0] - slider_size[0] and sprite.direction == "right":
                     sprite.x += slider_speed * pill_difficulty
                     
@@ -153,18 +153,16 @@ init python:
         global pillScore
 
         for slider in slider_sprites:
-            if slider.type == "slider":
+            if slider.type == "minigame/slider.png":
                 for safe_zone in slider_sprites:
-                    if safe_zone.type == "safe-zone":
+                    if safe_zone.type == "minigame/safe-zone.png":
                         if safe_zone.x < slider.x < safe_zone.x + safe_zone_size[0]:
                             # Slider is overlapping the safe-zone. The user has successfully opened the chest.
                             pill_dispensed = True
                             stop_slider = True
                             pillScore += 1
-                            renpy.play("audio/open-door.ogg", "sound")
                         elif pill_dispense_tries > 0:
                             # Slider missed the safe-zone. We remove 1 from their attempts.
-                            renpy.play("audio/error.ogg", "sound")
                             pill_dispense_tries -= 1
                         if pill_dispense_tries == 0:
                             # User used up all their attempts and failed. We show them the game_over screen.
@@ -185,9 +183,9 @@ init python:
         slider_speed = 2
 
         for sprite in slider_sprites:
-            if sprite.type == "slider":
+            if sprite.type == "minigame/slider.png":
                 sprite.x = 0
-            elif sprite.type == "safe-zone":
+            elif sprite.type == "minigame/safe-zone.png":
                 random_x = renpy.random.randint(0, slider_bar_size[0] - safe_zone_size[0])
                 sprite.x = random_x
 
@@ -244,7 +242,7 @@ screen game_over:
 screen pill_minigame:
     on "show" action Function(reset_pill_minigame)
     key ["mousedown_1"] action If(pill_dispensed, true = [Hide("pill_minigame", transition = Fade(1, 1, 1)), Show("pill_minigame")], false = Function(check_slider_safe_zone))
-    image "background.png" at half_size
+    image "minigame/pillgameBG.png" 
     text "Pills Dispensed: [pillScore]"
 
     if not pill_dispensed:
@@ -257,16 +255,16 @@ screen pill_minigame:
             background None
             align (0.5, 0.4)
             xysize slider_bar_size
-            image "slider-bar.png" at half_size
+            image "minigame/slider-bar.png" at half_size
             add slider_SM
-        image "pillcup_empty_idle.png" align (0.5, 0.7) at half_size
+        image "minigame/pillcup_empty_idle.png" align (0.5, 0.7) at half_size
     else:
-        image "pillcup_full.png" align (0.5, 0.7) at pill_dispensed_anim
+        image "minigame/pillcup_full.png" align (0.5, 0.7) at pill_dispensed_anim
         
 screen minigame:
     timer 30.0 action Show("game_over")
 
-    image "bg/.png" at half_size
+    image "minigame/pillgameBG.png" at half_size
     #text "Chests Unlocked: [pillScore]"
     
     use pill_minigame
