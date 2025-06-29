@@ -139,19 +139,21 @@ style window:
     background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
 
 style namebox:
-    xpos gui.name_xpos
+    xpos 400
     xanchor gui.name_xalign
-    xsize gui.namebox_width
+    xsize 450
     ypos gui.name_ypos
-    ysize gui.namebox_height
+    ysize 100
 
     background Frame("gui/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
     padding gui.namebox_borders.padding
 
 style say_label:
     properties gui.text_properties("name", accent=True)
-    xalign gui.name_xalign
-    yalign 0.5
+    xalign 0.5
+    yalign 0.0
+    yoffset 10
+
 
 style say_dialogue:
     properties gui.text_properties("dialogue")
@@ -160,7 +162,6 @@ style say_dialogue:
     xsize gui.dialogue_width
     ypos gui.dialogue_ypos
 
-    adjust_spacing False
 
 ## Input screen ################################################################
 ##
@@ -247,15 +248,14 @@ screen quick_menu():
             style_prefix "quick"
 
             xalign 0.5
+            xoffset 540
             yalign 1.0
+            yoffset -25
 
             textbutton _("Back") action Rollback()
-            textbutton _("History") action ShowMenu('history')
             textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
             textbutton _("Save") action ShowMenu('save')
-            textbutton _("Q.Save") action QuickSave()
-            textbutton _("Q.Load") action QuickLoad()
             textbutton _("Prefs") action ShowMenu('preferences')
 
 
@@ -291,7 +291,7 @@ screen navigation():
         style_prefix "navigation"
 
         xpos gui.navigation_xpos
-        yalign 0.5
+        yalign 0.8
 
         spacing gui.navigation_spacing
 
@@ -356,8 +356,8 @@ screen main_menu():
     add gui.main_menu_background
 
     ## This empty frame darkens the main menu.
-    frame:
-        style "main_menu_frame"
+    #:
+        #style "main_menu_frame"
 
     ## The use statement includes another screen inside this one. The actual
     ## contents of the main menu are in the navigation screen.

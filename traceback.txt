@@ -1,18 +1,16 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-Compiling ATL code at game/week1.rpy:290
-  File "game/week1.rpy", line 289, in script
-    show nyx shr with dissolve:
-  File "game/week1.rpy", line 290, in <module>
-    ASDFGH
-NameError: name 'ASDFGH' is not defined
+Compiling ATL code at game/week1.rpy:236
+  File "game/week1.rpy", line 235, in script
+    scene black with dissolve:
+Exception: Not a displayable: <partial <class 'renpy.display.transition.NoTransition'> (1.0,) {}>
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/week1.rpy", line 289, in script
-    show nyx shr with dissolve:
-  File "/Users/pasaree/Downloads/renpy-8.0.3-sdk/renpy/ast.py", line 1111, in execute
+  File "game/week1.rpy", line 235, in script
+    scene black with dissolve:
+  File "/Users/pasaree/Downloads/renpy-8.0.3-sdk/renpy/ast.py", line 1245, in execute
     show_imspec(self.imspec, atl=getattr(self, "atl", None))
   File "/Users/pasaree/Downloads/renpy-8.0.3-sdk/renpy/ast.py", line 1074, in show_imspec
     renpy.config.show(name,
@@ -30,19 +28,13 @@ Full traceback:
     statements = [ i.compile(ctx) for i in self.statements ]
   File "/Users/pasaree/Downloads/renpy-8.0.3-sdk/renpy/atl.py", line 925, in <listcomp>
     statements = [ i.compile(ctx) for i in self.statements ]
-  File "/Users/pasaree/Downloads/renpy-8.0.3-sdk/renpy/atl.py", line 1231, in compile
-    child = ctx.eval(expr)
-  File "/Users/pasaree/Downloads/renpy-8.0.3-sdk/renpy/atl.py", line 387, in eval
-    return renpy.python.py_eval(expr, locals=self.context)
-  File "/Users/pasaree/Downloads/renpy-8.0.3-sdk/renpy/python.py", line 1209, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "/Users/pasaree/Downloads/renpy-8.0.3-sdk/renpy/python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/week1.rpy", line 290, in <module>
-    ASDFGH
-NameError: name 'ASDFGH' is not defined
+  File "/Users/pasaree/Downloads/renpy-8.0.3-sdk/renpy/atl.py", line 1240, in compile
+    child = renpy.easy.displayable(child)
+  File "/Users/pasaree/Downloads/renpy-8.0.3-sdk/renpy/easy.py", line 145, in displayable
+    raise Exception("Not a displayable: %r" % (d,))
+Exception: Not a displayable: <partial <class 'renpy.display.transition.NoTransition'> (1.0,) {}>
 
 macOS-14.5-arm64-arm-64bit arm64
 Ren'Py 8.3.2.24090902
-vested interests 1.0
-Thu Jun 26 01:25:15 2025
+Cure Your Hate 1.0
+Sun Jun 29 18:09:28 2025

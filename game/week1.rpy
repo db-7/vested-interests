@@ -2,6 +2,7 @@
 label w1mon:
     scene mon1 with dissolve
     pause(1.0)
+    play music prologue fadein 1.0
     scene bg bedN with dissolve
     #triple quotes thing needs blank lines between
     """In highschool, Jessica and I were never really in the same circles.\n
@@ -62,6 +63,7 @@ label w1mon:
 label w1tue:
     scene tue1 with dissolve
     pause(1.0)
+    play music cafe fadein 1.0
     scene bg cafe with dissolve
     show nyx neu with dissolve:
         xalign 0.8
@@ -150,7 +152,8 @@ label w1tue:
     "I nod along as I listen to Jessica. They seem like people I could get along with."
 
     show jes sch with dissolve
-    j "And of course I told them about you and your past."
+    j "And of course I told them about you and your{w=1}{cps=10} past.{/cps}"
+    stop music fadeout 1.0
 
     "{cps=2}...{/cps}"
     show nyx ano with MoveTransition(0.1):
@@ -221,16 +224,22 @@ label w1tue:
 label w1wed:
     scene wed1 with dissolve
     pause(1.0)
-    scene bg car with dissolve
+    play music movingin fadein 1.0
+    scene bg bedN with dissolve
 
     """It's finally time to move in.
+
     I'm real interested in meeting these guys, especially with whatever bullshit they heard from Jessica.
+
     I'm sure this will be an entertaining introduction."""
 
+    scene black with dissolve
+    pause(1.0)
     scene bg apthall with dissolve
     show nyx neu with dissolve:
         xalign 0.8
     """I've arrived at the apartment complex.
+
     I'm surprised that it's so nice considering the cheap rent I'll be paying.
 
     I knock on the door and barely have to wait when Jessica quickly swings the door open."""
@@ -242,6 +251,7 @@ label w1wed:
     j "Nyx! I'm so happy you're here!"
 
     """Jessica suddenly embraces me into an almost bone crushing hug.
+
     I'm about to shove her off of me when I suddenly notice some men in the living room behind her."""
     show nyx neu with moveinright:
         xalign 0.75
