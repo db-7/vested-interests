@@ -8,15 +8,17 @@ image bg bedN = "bg/bedN.png"
 image bg bedS = "bg/bedS.png"
 image bg car = "bg/Car02_day_1920.jpg"
 
-image cg meet = "cg/meet_cg_wip.png"
+image cg meet:
+    "cg/meet_cg.png"
+    zoom 0.75
 image bg juiceshop = "frootjuice.png"
 image mon1 = "cards/mon1.png"
 image tue1 = "cards/tue1.png"
 image wed1 = "cards/wed1.png"
 
-define prologue = "audio/music/vntrack12.mp3"
+define prologue = "audio/music/vntrack21.mp3"
 define cafe = "audio/music/Jazzy Shop.ogg"
-define movingin = "audio/music/vntrack21.mp3"
+define movingin = "audio/music/Jazzy Shop.ogg"
 
 
 
