@@ -278,8 +278,10 @@ label w1wed:
 
     "Astin gives me a small wave."
 
+    show cg meet ast with dissolve
     a "Yo, I've heard a lot about you from Jessica! Uh, mostly good things."
 
+    show cg meet with dissolve
     "He's quick to correct himself."
     "He seems sweet but I can imagine it's a little hard to be friendly to someone you've only heard awful things about."
 
@@ -291,14 +293,18 @@ label w1wed:
 
     "Then the... extravagantly dressed man decides to introduce himself."
 
+    show cg meet eli with dissolve
     e "My, My~ I didn't expect our new roommate to be such a stunning woman. My name is Elias, I hope we can get to know each other."
 
+    show cg meet with dissolve
     "Ah... he'd be charming if he was being genuine."
 
     n "I'm flattered. I'm sure we'll be able to spend plenty of time together."
 
+    show cg meet eli with dissolve
     e "Perhaps we could-"
 
+    show cg meet with dissolve
     "Jessica quickly interrupts Elias."
 
     j "Alright, lovebirds. The two of you can flirt later. Anyways, Nyx, this is Pierre."
@@ -306,8 +312,10 @@ label w1wed:
     "Jessica looks over at the blonde man hoping he would introduce himself."
     "Pierre takes a sip of his tea before speaking softly."
 
+    show cg meet pir with dissolve
     p "A pleasure to meet you, madame."
 
+    show cg meet with dissolve
     "He seems like a gentleman but a bit quiet."
 
     j "Pierre isn't really the talkative type but he's charming. You'll get used to it."

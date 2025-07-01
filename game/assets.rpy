@@ -9,8 +9,18 @@ image bg bedS = "bg/bedS.png"
 image bg car = "bg/Car02_day_1920.jpg"
 
 image cg meet:
-    "cg/meet_cg.png"
+    "cg/meet_luc.png"
     zoom 0.75
+image cg meet ast:
+    "cg/meet_ast.png"
+    zoom 0.75
+image cg meet eli:
+    "cg/meet_eli.png"
+    zoom 0.75
+image cg meet pir:
+    "cg/meet_pir.png"
+    zoom 0.75
+
 image bg juiceshop = "frootjuice.png"
 image mon1 = "cards/mon1.png"
 image tue1 = "cards/tue1.png"
